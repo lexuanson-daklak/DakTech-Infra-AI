@@ -21,7 +21,7 @@ kpi_row([
     ("Phân hệ", f"{registry.module.nunique()}", "Đường bộ, nghĩa trang, cấp nước, thoát nước"),
     ("Tài sản mẫu", f"{len(registry):,}", "Tổng số tài sản trong Asset Registry dùng chung"),
     ("Cần chú ý", f"{len(attention):,}", "Tài sản có trạng thái khác ACTIVE"),
-    ("Độ đầy đủ dữ liệu", f"{completeness:.1f}%", "Tỷ lệ có dữ liệu ở các trường bắt buộc của Asset Registry"),
+    ("Mức đầy đủ của dữ liệu mẫu", f"{completeness:.1f}%", "Tỷ lệ có dữ liệu ở các trường bắt buộc của bộ dữ liệu mẫu đang dùng để kiểm chứng"),
     ("Lỗi dữ liệu", f"{int((quality.severity == 'ERROR').sum()) if not quality.empty else 0}", "Kết quả Rule Engine chất lượng dữ liệu"),
 ])
 
@@ -34,8 +34,17 @@ with right:
     st.markdown("### Tín hiệu điều hành theo phân hệ")
     view = summary.copy()
     view["module_name"] = view["module"].map(lambda x: MODULES.get(x, {}).get("name", x))
-    st.dataframe(view[["module_name", "assets", "active", "attention", "management_units", "localities"]], use_container_width=True, hide_index=True)
-    st.bar_chart(view.set_index("module_name")[["active", "attention"]])
+    display = view[["module_name", "assets", "active", "attention", "management_units", "localities"]].rename(columns={
+        "module_name": "Phân hệ",
+        "assets": "Số tài sản",
+        "active": "Đang hoạt động",
+        "attention": "Cần chú ý",
+        "management_units": "Đơn vị quản lý",
+        "localities": "Địa bàn",
+    })
+    st.dataframe(display, use_container_width=True, hide_index=True)
+    chart = view.set_index("module_name")[["active", "attention"]].rename(columns={"active": "Đang hoạt động", "attention": "Cần chú ý"})
+    st.bar_chart(chart)
 
 st.markdown("### Tài sản đang cần theo dõi")
 if attention.empty:
@@ -47,8 +56,9 @@ else:
         hide_index=True,
     )
 
-st.markdown("### Từ v0.1 sang v0.2 đã thay đổi gì?")
+st.markdown("### Trạng thái phiên bản hiện tại")
 st.info(
-    "v0.2 đã có Asset Registry dùng chung, Hồ sơ tài sản 360°, nhập CSV/Excel có kiểm tra, "
-    "Rule Engine chất lượng dữ liệu và dashboard lãnh đạo. Các quy tắc pháp lý chuyên ngành mới chỉ tạo khung, chưa tự động áp dụng."
+    "MVP v0.4 bắt đầu tiếp nhận dữ liệu báo cáo nghĩa trang thực tế theo nguyên tắc: giữ nguồn gốc, "
+    "tách dữ liệu công khai khỏi dữ liệu làm việc nội bộ, gắn cờ chất lượng và chỉ dùng cho điều hành sau khi cán bộ xác minh. "
+    "Các quy tắc pháp lý chuyên ngành chưa được tự động áp dụng."
 )

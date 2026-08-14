@@ -18,11 +18,11 @@ st.title("📥 Nạp báo cáo nghĩa trang")
 st.caption("Dùng cho các báo cáo Excel/CSV đang có ở xã, phường, đơn vị quản lý hoặc hồ sơ tổng hợp của Phòng.")
 
 st.warning(
-    "MVP v0.3 KHÔNG tự ghi dữ liệu báo cáo vào kho chính thức. Tệp nguồn được giữ nguyên; bước này chỉ ghép cột, chuẩn hóa, kiểm tra và tạo bản dữ liệu chờ xác minh."
+    "MVP v0.4 KHÔNG tự ghi dữ liệu báo cáo vào kho chính thức. Tệp nguồn được giữ nguyên; bước này chỉ ghép cột, chuẩn hóa, kiểm tra và tạo bản dữ liệu chờ xác minh."
 )
 
 st.markdown("### 1. Biểu mẫu chuẩn chuyên ngành")
-template = TEMPLATE_DIR / "DakCemetery_Bieu_mau_du_lieu_v0.3.xlsx"
+template = TEMPLATE_DIR / "DakCemetery_Bieu_mau_du_lieu_v0.4.xlsx"
 if template.exists():
     st.download_button(
         "⬇️ Tải biểu mẫu dữ liệu nghĩa trang",
@@ -86,7 +86,7 @@ if uploaded is not None:
 
     st.markdown("#### Danh sách lỗi/cảnh báo")
     if issues.empty:
-        st.success("Chưa phát hiện lỗi/cảnh báo theo bộ kiểm tra dữ liệu nghĩa trang v0.3.")
+        st.success("Chưa phát hiện lỗi/cảnh báo theo bộ kiểm tra dữ liệu nghĩa trang v0.4.")
     else:
         st.dataframe(issues, use_container_width=True, hide_index=True)
 
@@ -114,4 +114,11 @@ st.markdown(
     "- Nếu báo cáo không có mã nghĩa trang, hệ thống chỉ cấp **mã tạm**.\n"
     "- Số liệu tính toán như tỷ lệ sử dụng hay năm ước tính đầy được tách riêng, không ghi đè số liệu báo cáo.\n"
     "- Chỉ sau khi xác minh đơn vị báo cáo, thời điểm, nguồn, địa điểm và mã tài sản mới đưa vào kho chính thức."
+)
+
+
+st.divider()
+st.warning(
+    "Lưu ý bảo mật: kho GitHub/website demo hiện là bản công khai. Không đưa tệp báo cáo gốc, hồ sơ nội bộ, "
+    "thông tin cá nhân hoặc dữ liệu chưa được phép công khai lên GitHub Public. Với dữ liệu nội bộ, cần triển khai môi trường riêng/private."
 )

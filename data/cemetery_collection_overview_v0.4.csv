@@ -1,0 +1,13 @@
+﻿chi_tieu,gia_tri,ghi_chu
+Gói hồ sơ đã tiếp nhận,36,"03 tệp RAR, tổng 36 gói hồ sơ"
+Gói cấp xã/phường,34,Đánh số 1–34
+Báo cáo hiện trạng cấp xã/phường,30,Nhóm có nội dung rà soát/hiện trạng
+Báo cáo đã xin hủy,1,Có 01 nguồn xin lấy lại/hủy văn bản; không sử dụng làm dữ liệu chính thức
+Hồ sơ triển khai quy định,1,"Có 01 nguồn mới ở mức văn bản triển khai, chưa có danh mục hiện trạng"
+Hồ sơ quy hoạch/mở rộng,1,Có 01 nguồn chủ yếu là hồ sơ quy hoạch/mở rộng
+Quyết định đóng cửa,1,Có 01 nguồn có quyết định đóng cửa và chuyển trạng thái
+Báo cáo đơn vị vận hành,1,"Có 01 nguồn từ đơn vị vận hành, cần tách nhóm nguồn"
+Hồ sơ KKT về đóng cửa/di dời,1,Có 01 nguồn bối cảnh đóng cửa/di dời liên quan dự án
+Bản ghi chi tiết đã tách sơ bộ,303,Dữ liệu dẫn xuất từ báo cáo; chưa xác minh chính thức
+Nguồn có bản ghi chi tiết đã tách,32,Không tính gói hủy; có nguồn chỉ ở mức tổng hợp
+Bản ghi có cờ chất lượng dữ liệu,56,Cần đối chiếu trước khi dùng điều hành

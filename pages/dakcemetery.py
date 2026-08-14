@@ -8,11 +8,13 @@ st.title("⚱️ DakCemetery AI")
 st.caption("Phân hệ quản trị nghĩa trang và cơ sở hỏa táng – tập trung vào tài sản, quỹ đất, công suất, quy hoạch, hạ tầng, đầu tư và nguồn dữ liệu.")
 
 st.info(
-    "MVP v0.3 chưa quản lý thông tin cá nhân người đã mất. Trọng tâm là dữ liệu quản lý nhà nước cấp cơ sở/cấp tỉnh. "
+    "MVP v0.4 chưa quản lý thông tin cá nhân người đã mất. Trọng tâm là dữ liệu quản lý nhà nước cấp cơ sở/cấp tỉnh. "
     "Các tín hiệu 'quỹ đất thấp' chỉ phục vụ rà soát, không phải kết luận pháp lý hoặc quyết định đóng/mở rộng nghĩa trang."
 )
 
 df = load_cemetery_master()
+
+st.caption("Lớp bản đồ/hồ sơ ở trang này hiện vẫn là dữ liệu mẫu để kiểm chứng giao diện. Dữ liệu dẫn xuất từ 36 gói báo cáo được quản lý riêng tại trang **Kho báo cáo nghĩa trang** và chưa tự động coi là dữ liệu chính thức.")
 
 c1, c2, c3 = st.columns(3)
 with c1:

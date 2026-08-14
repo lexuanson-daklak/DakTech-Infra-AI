@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## MVP v0.4 – 14/08/2026
+- Tiếp nhận 03 tệp RAR gồm 36 gói hồ sơ quản lý nghĩa trang do tác giả thu thập.
+- Phân loại 30 báo cáo hiện trạng cấp xã/phường và các nguồn riêng: hủy văn bản, triển khai quy định, quy hoạch/mở rộng, đóng cửa, vận hành, KKT.
+- Tách sơ bộ 303 bản ghi chi tiết từ 32 nguồn; 56 bản ghi có cờ chất lượng cần đối chiếu.
+- Không đưa báo cáo gốc và dữ liệu chi tiết dẫn xuất lên GitHub Public.
+- Bổ sung `cemetery_collection_overview_v0.4.csv` và `cemetery_collection_status_v0.4.csv` ở mức tổng hợp công khai.
+- Bổ sung trang **Kho báo cáo nghĩa trang** để theo dõi nguồn, trạng thái xử lý và chất lượng dữ liệu.
+- Việt hóa bảng tín hiệu điều hành và đổi KPI thành **Mức đầy đủ của dữ liệu mẫu** để tránh hiểu nhầm.
+- Tăng cảnh báo bảo mật và nguyên tắc không tự sửa số liệu nguồn bất thường.
+
 ## MVP v0.2 – 14/08/2026
 - Chuyển từ dữ liệu phân hệ rời sang Asset Registry dùng chung 36 tài sản mẫu.
 - Bổ sung source_id, updated_at và record_hash.

@@ -17,6 +17,7 @@ pages = {
     "Phân hệ chuyên ngành": [
         st.Page("pages/dakroad.py", title="DakRoad AI", icon="🛣️"),
         st.Page("pages/dakcemetery.py", title="DakCemetery AI", icon="⚱️"),
+        st.Page("pages/cemetery_sources.py", title="Kho báo cáo nghĩa trang", icon="🗂️"),
         st.Page("pages/cemetery_import.py", title="Nạp báo cáo nghĩa trang", icon="📥"),
         st.Page("pages/dakwater.py", title="DakWater AI", icon="💧"),
         st.Page("pages/dakdrain.py", title="DakDrain AI", icon="🌧️"),
