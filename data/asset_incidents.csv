@@ -1,0 +1,4 @@
+﻿incident_id,asset_code,module,incident_type,severity,status,occurred_at,description,recommended_action,updated_at
+INC-0001,DRN-002,drain,FLOOD,MEDIUM,OPEN,2026-08-10,Ngập sau mưa lớn – dữ liệu mô phỏng,Rà soát tiết diện và lưu vực,2026-08-14
+INC-0002,WTR-002,water,EQUIPMENT,LOW,CLOSED,2026-08-05,Cảnh báo thiết bị bơm – dữ liệu mô phỏng,Đã kiểm tra trong kịch bản demo,2026-08-14
+INC-0003,CEM-002,cemetery,CAPACITY,MEDIUM,OPEN,2026-08-01,Quỹ đất còn lại thấp trong dữ liệu mô phỏng,Rà soát khả năng mở rộng,2026-08-14

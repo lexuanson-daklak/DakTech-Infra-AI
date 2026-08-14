@@ -1,0 +1,11 @@
+asset_code,asset_name,asset_type,locality,latitude,longitude,basin,capacity_note,management_unit,status,investment_need
+DRN-001,Tuyến cống mẫu 01,SEWER,Khu vực trung tâm,12.6720,108.0400,Lưu vực A,D800 - tuyến chính,Đơn vị thoát nước A,ACTIVE,Nạo vét định kỳ
+DRN-002,Điểm ngập mẫu 01,FLOOD_POINT,Khu vực trung tâm,12.6650,108.0550,Lưu vực A,Ngập sau mưa lớn,Đơn vị thoát nước A,REVIEW,Nâng tiết diện cống
+DRN-003,Trạm bơm mẫu 01,PUMP_STATION,Khu vực phía Đông,13.0850,109.3000,Lưu vực B,2 bơm vận hành,Đơn vị thoát nước B,ACTIVE,Bảo dưỡng thiết bị
+DRN-004,Nhà máy XLNT mẫu 01,WWTP,Khu vực phía Đông,13.1000,109.3150,Lưu vực B,5000 m3/ngđ,Đơn vị thoát nước B,ACTIVE,Nâng công suất
+DRN-005,Tuyến cống mẫu 02,SEWER,Khu vực phía Bắc,12.8500,108.2500,Lưu vực C,D600 - tuyến gom,Đơn vị thoát nước C,REVIEW,Kiểm tra xuống cấp
+DRN-006,Điểm ngập mẫu 02,FLOOD_POINT,Khu vực phía Bắc,12.8420,108.2550,Lưu vực C,Ngập cục bộ,Đơn vị thoát nước C,REVIEW,Bổ sung hố thu
+DRN-007,Tuyến cống mẫu 03,SEWER,Khu vực phía Nam,12.4700,108.2000,Lưu vực D,D1000 - tuyến chính,Đơn vị thoát nước D,ACTIVE,Nạo vét
+DRN-008,Điểm xả mẫu 01,OUTFALL,Khu vực ven biển,13.0150,109.3350,Lưu vực E,Điểm xả kiểm soát,Đơn vị thoát nước E,ACTIVE,Theo dõi chất lượng
+DRN-009,Tuyến cống mẫu 04,SEWER,Khu vực phía Tây,12.7500,107.8700,Lưu vực F,D500 - tuyến gom,Đơn vị thoát nước F,ACTIVE,Bổ sung dữ liệu GIS
+DRN-010,Điểm ngập mẫu 03,FLOOD_POINT,Khu vực Đông Nam,12.8950,109.1650,Lưu vực G,Ngập theo triều/mưa,Đơn vị thoát nước G,REVIEW,Nghiên cứu giải pháp tổng thể

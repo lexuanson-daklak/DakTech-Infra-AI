@@ -1,0 +1,12 @@
+﻿flag_id,topic,severity,finding,required_action
+LR-01,Phạm vi lãnh thổ và chuyển tiếp,HIGH,Tồn tại song song nguồn dữ liệu NQ24/2024 của Đắk Lắk cũ và NQ35/2022 của Phú Yên cũ.,"Mỗi hồ sơ phải gắn địa bàn, thời điểm và văn bản áp dụng; không dùng một bảng mức thu chung cho toàn tỉnh khi chưa có nghị quyết thống nhất."
+LR-02,Tỷ lệ để lại,HIGH,"Các hồ sơ địa phương năm 2026 đang áp dụng/đề xuất 20/80, 50/50 hoặc nộp 100% NSNN.",Thiết lập trường policy_version và revenue_mechanism; khóa tự động tính phân bổ cho đến khi cơ quan thẩm định kết luận.
+LR-03,Đơn vị tính,HIGH,"Có mức theo m2/tháng, m2/lần, xe/lượt, xe/tháng và đề xuất m2/ngày.",Không dùng công thức area x days x rate cho mọi trường hợp; bộ máy tính phải theo từng unit_code.
+LR-04,Khu vực công cộng,HIGH,"Một số đề án mở rộng sang quảng trường, sân bóng, đất công chưa sử dụng.","Phân loại riêng phí lòng đường, hè phố với khai thác tài sản công, cho thuê mặt bằng hoặc giá dịch vụ."
+LR-05,Mức trực tuyến 80%,MEDIUM,Ea Ktur và Buôn Hồ đề xuất áp dụng 80% khi thực hiện trực tuyến.,Xác minh điều khoản giảm mức thu có áp dụng đúng loại phí và thời kỳ trước khi đưa vào Rule Engine chính thức.
+LR-06,Thẩm quyền quyết định,HIGH,"Đề án cấp xã là hồ sơ đề xuất, không tự tạo ra mức thu có hiệu lực chung.",Gắn trạng thái DRAFT/PROPOSAL; chỉ mức được HĐND tỉnh quyết định mới được đánh dấu OFFICIAL.
+LR-07,Mâu thuẫn nội bộ hồ sơ,HIGH,Một số đề án có nhiều tỷ lệ quản lý nguồn thu hoặc số liệu dự toán khác nhau trong cùng hồ sơ.,Không cho phép chuyển trạng thái APPROVED_DATA khi chưa giải quyết hết data_quality_issues.
+LR-08,Điều kiện đủ để tổ chức thu,HIGH,Dang Kang và Buôn Đôn xác định không có hoặc không đủ vị trí đáp ứng điều kiện sử dụng ngoài giao thông.,Hệ thống phải có trạng thái NOT_ELIGIBLE/NO_COLLECTION; không mặc định mọi địa phương đều phải tạo nguồn thu.
+LR-09,Mô hình xây dựng chính sách,HIGH,Dray Bhăng kiến nghị một đề án tổng thể toàn tỉnh thay vì nhiều đề án độc lập cấp xã.,"Thiết kế dữ liệu theo policy chung của tỉnh và profile/zone địa phương, tránh sao chép Rule Engine cho từng xã."
+LR-10,"Tách miền phí, lệ phí",HIGH,Hồ sơ Buôn Đôn gồm kết luận không thu phí lòng đường và đề án lệ phí đăng ký kinh doanh.,Không trộn lệ phí hành chính với phí khai thác/sử dụng tạm thời tài sản đường bộ.
+LR-11,Cơ chế để lại 100%,HIGH,"Phường Phú Yên đề xuất để lại 100% nguồn thu, khác các nghị quyết cũ.",Khóa tính phân bổ nguồn thu cho đến khi cơ quan thẩm định kết luận căn cứ chuyển tiếp.

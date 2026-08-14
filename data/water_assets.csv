@@ -1,0 +1,9 @@
+asset_code,asset_name,locality,latitude,longitude,source_type,design_capacity_m3d,current_capacity_m3d,served_population,management_unit,status,investment_need
+WTR-001,Nhà máy nước mẫu 01,Khu vực trung tâm,12.6800,108.0450,Nước mặt,20000,15800,65000,Đơn vị cấp nước A,ACTIVE,Mở rộng tuyến truyền tải
+WTR-002,Trạm cấp nước mẫu 02,Khu vực phía Bắc,12.8600,108.2700,Nước ngầm,5000,4300,18000,Đơn vị cấp nước B,ACTIVE,Thay thiết bị bơm
+WTR-003,Nhà máy nước mẫu 03,Khu vực phía Đông,13.0900,109.3100,Nước mặt,18000,13200,52000,Đơn vị cấp nước C,ACTIVE,Mở rộng vùng phục vụ
+WTR-004,Trạm cấp nước mẫu 04,Khu vực phía Nam,12.4500,108.1900,Nước ngầm,3500,3400,11000,Đơn vị cấp nước D,REVIEW,Đánh giá nguồn nước mùa khô
+WTR-005,Nhà máy nước mẫu 05,Khu vực cao nguyên,12.9500,108.1000,Nước mặt,9000,6200,28000,Đơn vị cấp nước E,ACTIVE,Nâng công suất xử lý
+WTR-006,Trạm cấp nước mẫu 06,Khu vực ven biển,13.0300,109.3400,Nước mặt,7000,5100,24000,Đơn vị cấp nước F,ACTIVE,Giảm thất thoát
+WTR-007,Trạm cấp nước mẫu 07,Khu vực phía Tây,12.7600,107.8800,Nước ngầm,2500,2200,8500,Đơn vị cấp nước G,REVIEW,Rà soát chất lượng nguồn
+WTR-008,Nhà máy nước mẫu 08,Khu vực Đông Nam,12.9000,109.1500,Nước mặt,12000,8400,36000,Đơn vị cấp nước H,ACTIVE,Hoàn thiện mạng phân phối

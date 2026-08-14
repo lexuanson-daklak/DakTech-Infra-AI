@@ -1,0 +1,83 @@
+[
+  {
+    "rule_code": "DQ-001",
+    "name": "Đủ trường dữ liệu bắt buộc",
+    "scope": "ALL",
+    "category": "DATA_QUALITY",
+    "severity": "ERROR",
+    "enabled": true,
+    "decision_effect": "DATA_VALIDATION_ONLY"
+  },
+  {
+    "rule_code": "DQ-002",
+    "name": "Mã phân hệ hợp lệ",
+    "scope": "ALL",
+    "category": "DATA_QUALITY",
+    "severity": "ERROR",
+    "enabled": true,
+    "decision_effect": "DATA_VALIDATION_ONLY"
+  },
+  {
+    "rule_code": "DQ-003",
+    "name": "Trạng thái tài sản nằm trong danh mục cho phép",
+    "scope": "ALL",
+    "category": "DATA_QUALITY",
+    "severity": "ERROR",
+    "enabled": true,
+    "decision_effect": "DATA_VALIDATION_ONLY"
+  },
+  {
+    "rule_code": "DQ-004",
+    "name": "Tài sản khác ACTIVE cần theo dõi",
+    "scope": "ALL",
+    "category": "MANAGEMENT_SIGNAL",
+    "severity": "INFO",
+    "enabled": true,
+    "decision_effect": "ALERT_ONLY"
+  },
+  {
+    "rule_code": "DQ-005",
+    "name": "Tọa độ nằm trong khoảng hợp lệ",
+    "scope": "ALL",
+    "category": "DATA_QUALITY",
+    "severity": "ERROR",
+    "enabled": true,
+    "decision_effect": "DATA_VALIDATION_ONLY"
+  },
+  {
+    "rule_code": "DQ-006",
+    "name": "Mã tài sản không trùng",
+    "scope": "ALL",
+    "category": "DATA_QUALITY",
+    "severity": "ERROR",
+    "enabled": true,
+    "decision_effect": "DATA_VALIDATION_ONLY"
+  },
+  {
+    "rule_code": "CEM-LEGAL-001",
+    "name": "Khung quy tắc pháp lý nghĩa trang",
+    "scope": "cemetery",
+    "category": "LEGAL_PLACEHOLDER",
+    "severity": "BLOCK",
+    "enabled": false,
+    "decision_effect": "NONE_UNTIL_APPROVED"
+  },
+  {
+    "rule_code": "WTR-LEGAL-001",
+    "name": "Khung quy tắc pháp lý cấp nước",
+    "scope": "water",
+    "category": "LEGAL_PLACEHOLDER",
+    "severity": "BLOCK",
+    "enabled": false,
+    "decision_effect": "NONE_UNTIL_APPROVED"
+  },
+  {
+    "rule_code": "DRN-LEGAL-001",
+    "name": "Khung quy tắc pháp lý thoát nước",
+    "scope": "drain",
+    "category": "LEGAL_PLACEHOLDER",
+    "severity": "BLOCK",
+    "enabled": false,
+    "decision_effect": "NONE_UNTIL_APPROVED"
+  }
+]

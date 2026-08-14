@@ -1,0 +1,42 @@
+{
+  "metadata": {
+    "version": "0.5",
+    "updated": "2026-07-27",
+    "description": "Legal Version Control Layer - dữ liệu bước đầu do tác giả cung cấp"
+  },
+  "policies": [
+    {
+      "policy_code": "NQ35_2022_PHUYEN_FORMER",
+      "source_id": "SRC-NQ35-2022-PY",
+      "status": "OFFICIAL_SOURCE",
+      "effective_from": "2022-11-28",
+      "effective_to": "",
+      "territory": "Phú Yên trước sắp xếp",
+      "revenue_mechanism": "retain_20_budget_80",
+      "successor": "UNIFIED_DAKLAK_FEE_RESOLUTION_PENDING"
+    },
+    {
+      "policy_code": "NQ24_2024_DAKLAK_FORMER",
+      "source_id": "SRC-NQ24-2024-DL",
+      "status": "OFFICIAL_SOURCE",
+      "effective_from": "2024-12-16",
+      "effective_to": "",
+      "territory": "Đắk Lắk trước sắp xếp",
+      "revenue_mechanism": "retain_50_budget_50_in_source",
+      "successor": "UNIFIED_DAKLAK_FEE_RESOLUTION_PENDING"
+    },
+    {
+      "policy_code": "UNIFIED_DAKLAK_FEE_RESOLUTION_PENDING",
+      "source_id": "",
+      "status": "PENDING",
+      "effective_from": "",
+      "effective_to": "",
+      "territory": "Tỉnh Đắk Lắk sau sắp xếp",
+      "revenue_mechanism": "PENDING_REVIEW",
+      "predecessors": [
+        "NQ35_2022_PHUYEN_FORMER",
+        "NQ24_2024_DAKLAK_FORMER"
+      ]
+    }
+  ]
+}

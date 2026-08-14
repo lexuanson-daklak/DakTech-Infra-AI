@@ -1,0 +1,37 @@
+﻿asset_code,module,investment_need,investment_stage,project_name,funding_source,estimated_cost_vnd,priority,note,updated_at
+CEM-001,cemetery,Cải tạo đường nội bộ,NHU_CAU_SO_BO_MVP,,,0,,"Dữ liệu mô phỏng/khung quản trị, chưa phải quyết định đầu tư.",2026-08-14
+CEM-002,cemetery,Rà soát khả năng mở rộng,NHU_CAU_SO_BO_MVP,,,0,,"Dữ liệu mô phỏng/khung quản trị, chưa phải quyết định đầu tư.",2026-08-14
+CEM-003,cemetery,Bổ sung cây xanh,NHU_CAU_SO_BO_MVP,,,0,,"Dữ liệu mô phỏng/khung quản trị, chưa phải quyết định đầu tư.",2026-08-14
+CEM-004,cemetery,Đánh giá phương án đóng cửa,NHU_CAU_SO_BO_MVP,,,0,,"Dữ liệu mô phỏng/khung quản trị, chưa phải quyết định đầu tư.",2026-08-14
+CEM-005,cemetery,Hoàn thiện hạ tầng kỹ thuật,NHU_CAU_SO_BO_MVP,,,0,,"Dữ liệu mô phỏng/khung quản trị, chưa phải quyết định đầu tư.",2026-08-14
+CEM-006,cemetery,Rà soát thoát nước,NHU_CAU_SO_BO_MVP,,,0,,"Dữ liệu mô phỏng/khung quản trị, chưa phải quyết định đầu tư.",2026-08-14
+CEM-007,cemetery,Đánh giá quỹ đất còn lại,NHU_CAU_SO_BO_MVP,,,0,,"Dữ liệu mô phỏng/khung quản trị, chưa phải quyết định đầu tư.",2026-08-14
+CEM-008,cemetery,Đầu tư đường tiếp cận,NHU_CAU_SO_BO_MVP,,,0,,"Dữ liệu mô phỏng/khung quản trị, chưa phải quyết định đầu tư.",2026-08-14
+DRN-001,drain,Nạo vét định kỳ,NHU_CAU_SO_BO_MVP,,,0,,"Dữ liệu mô phỏng/khung quản trị, chưa phải quyết định đầu tư.",2026-08-14
+DRN-002,drain,Nâng tiết diện cống,NHU_CAU_SO_BO_MVP,,,0,,"Dữ liệu mô phỏng/khung quản trị, chưa phải quyết định đầu tư.",2026-08-14
+DRN-003,drain,Bảo dưỡng thiết bị,NHU_CAU_SO_BO_MVP,,,0,,"Dữ liệu mô phỏng/khung quản trị, chưa phải quyết định đầu tư.",2026-08-14
+DRN-004,drain,Nâng công suất,NHU_CAU_SO_BO_MVP,,,0,,"Dữ liệu mô phỏng/khung quản trị, chưa phải quyết định đầu tư.",2026-08-14
+DRN-005,drain,Kiểm tra xuống cấp,NHU_CAU_SO_BO_MVP,,,0,,"Dữ liệu mô phỏng/khung quản trị, chưa phải quyết định đầu tư.",2026-08-14
+DRN-006,drain,Bổ sung hố thu,NHU_CAU_SO_BO_MVP,,,0,,"Dữ liệu mô phỏng/khung quản trị, chưa phải quyết định đầu tư.",2026-08-14
+DRN-007,drain,Nạo vét,NHU_CAU_SO_BO_MVP,,,0,,"Dữ liệu mô phỏng/khung quản trị, chưa phải quyết định đầu tư.",2026-08-14
+DRN-008,drain,Theo dõi chất lượng,NHU_CAU_SO_BO_MVP,,,0,,"Dữ liệu mô phỏng/khung quản trị, chưa phải quyết định đầu tư.",2026-08-14
+DRN-009,drain,Bổ sung dữ liệu GIS,NHU_CAU_SO_BO_MVP,,,0,,"Dữ liệu mô phỏng/khung quản trị, chưa phải quyết định đầu tư.",2026-08-14
+DRN-010,drain,Nghiên cứu giải pháp tổng thể,NHU_CAU_SO_BO_MVP,,,0,,"Dữ liệu mô phỏng/khung quản trị, chưa phải quyết định đầu tư.",2026-08-14
+DRA-BMT-001,road,Chưa xác định trong dữ liệu MVP,CHUA_CO_DU_LIEU,,,0,,"Dữ liệu mô phỏng/khung quản trị, chưa phải quyết định đầu tư.",2026-08-14
+DRA-BMT-002,road,Chưa xác định trong dữ liệu MVP,CHUA_CO_DU_LIEU,,,0,,"Dữ liệu mô phỏng/khung quản trị, chưa phải quyết định đầu tư.",2026-08-14
+DRA-BMT-003,road,Chưa xác định trong dữ liệu MVP,CHUA_CO_DU_LIEU,,,0,,"Dữ liệu mô phỏng/khung quản trị, chưa phải quyết định đầu tư.",2026-08-14
+DRA-BMT-004,road,Chưa xác định trong dữ liệu MVP,CHUA_CO_DU_LIEU,,,0,,"Dữ liệu mô phỏng/khung quản trị, chưa phải quyết định đầu tư.",2026-08-14
+DRA-BMT-005,road,Chưa xác định trong dữ liệu MVP,CHUA_CO_DU_LIEU,,,0,,"Dữ liệu mô phỏng/khung quản trị, chưa phải quyết định đầu tư.",2026-08-14
+DRA-BMT-006,road,Chưa xác định trong dữ liệu MVP,CHUA_CO_DU_LIEU,,,0,,"Dữ liệu mô phỏng/khung quản trị, chưa phải quyết định đầu tư.",2026-08-14
+DRA-BMT-007,road,Chưa xác định trong dữ liệu MVP,CHUA_CO_DU_LIEU,,,0,,"Dữ liệu mô phỏng/khung quản trị, chưa phải quyết định đầu tư.",2026-08-14
+DRA-BMT-008,road,Chưa xác định trong dữ liệu MVP,CHUA_CO_DU_LIEU,,,0,,"Dữ liệu mô phỏng/khung quản trị, chưa phải quyết định đầu tư.",2026-08-14
+DRA-BMT-009,road,Chưa xác định trong dữ liệu MVP,CHUA_CO_DU_LIEU,,,0,,"Dữ liệu mô phỏng/khung quản trị, chưa phải quyết định đầu tư.",2026-08-14
+DRA-BMT-010,road,Chưa xác định trong dữ liệu MVP,CHUA_CO_DU_LIEU,,,0,,"Dữ liệu mô phỏng/khung quản trị, chưa phải quyết định đầu tư.",2026-08-14
+WTR-001,water,Mở rộng tuyến truyền tải,NHU_CAU_SO_BO_MVP,,,0,,"Dữ liệu mô phỏng/khung quản trị, chưa phải quyết định đầu tư.",2026-08-14
+WTR-002,water,Thay thiết bị bơm,NHU_CAU_SO_BO_MVP,,,0,,"Dữ liệu mô phỏng/khung quản trị, chưa phải quyết định đầu tư.",2026-08-14
+WTR-003,water,Mở rộng vùng phục vụ,NHU_CAU_SO_BO_MVP,,,0,,"Dữ liệu mô phỏng/khung quản trị, chưa phải quyết định đầu tư.",2026-08-14
+WTR-004,water,Đánh giá nguồn nước mùa khô,NHU_CAU_SO_BO_MVP,,,0,,"Dữ liệu mô phỏng/khung quản trị, chưa phải quyết định đầu tư.",2026-08-14
+WTR-005,water,Nâng công suất xử lý,NHU_CAU_SO_BO_MVP,,,0,,"Dữ liệu mô phỏng/khung quản trị, chưa phải quyết định đầu tư.",2026-08-14
+WTR-006,water,Giảm thất thoát,NHU_CAU_SO_BO_MVP,,,0,,"Dữ liệu mô phỏng/khung quản trị, chưa phải quyết định đầu tư.",2026-08-14
+WTR-007,water,Rà soát chất lượng nguồn,NHU_CAU_SO_BO_MVP,,,0,,"Dữ liệu mô phỏng/khung quản trị, chưa phải quyết định đầu tư.",2026-08-14
+WTR-008,water,Hoàn thiện mạng phân phối,NHU_CAU_SO_BO_MVP,,,0,,"Dữ liệu mô phỏng/khung quản trị, chưa phải quyết định đầu tư.",2026-08-14

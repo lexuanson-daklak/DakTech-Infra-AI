@@ -1,0 +1,53 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "status": "DEMO",
+    "disclaimer": "Bộ quy tắc mô phỏng, không thay thế pháp luật."
+  },
+  "rules": [
+    {
+      "rule_id": "R01",
+      "severity": "WARNING"
+    },
+    {
+      "rule_id": "R02",
+      "severity": "WARNING"
+    },
+    {
+      "rule_id": "R03",
+      "severity": "WARNING"
+    },
+    {
+      "rule_id": "R04",
+      "severity": "WARNING"
+    },
+    {
+      "rule_id": "R05",
+      "severity": "WARNING"
+    },
+    {
+      "rule_id": "R06",
+      "severity": "WARNING"
+    },
+    {
+      "rule_id": "R07",
+      "severity": "WARNING"
+    },
+    {
+      "rule_id": "R08",
+      "severity": "WARNING"
+    },
+    {
+      "rule_id": "R09",
+      "severity": "WARNING"
+    },
+    {
+      "rule_id": "R10",
+      "severity": "WARNING"
+    },
+    {
+      "rule_id": "R11",
+      "severity": "WARNING"
+    }
+  ]
+}

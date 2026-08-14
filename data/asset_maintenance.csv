@@ -1,0 +1,5 @@
+﻿maintenance_id,asset_code,module,work_item,status,planned_date,completed_date,responsible_unit,note,updated_at
+MNT-0001,DRA-BMT-001,road,Nạo vét/vệ sinh vị trí mẫu,PLANNED,2026-09-01,,Đơn vị quản lý mô phỏng,Mô phỏng kế hoạch bảo trì,2026-08-14
+MNT-0002,CEM-002,cemetery,Rà soát đường nội bộ và quỹ đất còn lại,PLANNED,2026-09-15,,UBND địa phương B,Mô phỏng nhu cầu kiểm tra,2026-08-14
+MNT-0003,WTR-002,water,Kiểm tra thiết bị bơm,PLANNED,2026-08-25,,Đơn vị cấp nước B,Mô phỏng kế hoạch vận hành,2026-08-14
+MNT-0004,DRN-001,drain,Nạo vét tuyến cống,PLANNED,2026-08-28,,Đơn vị thoát nước A,Mô phỏng bảo trì định kỳ,2026-08-14

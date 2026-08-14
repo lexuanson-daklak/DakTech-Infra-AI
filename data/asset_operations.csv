@@ -1,0 +1,37 @@
+﻿asset_code,module,operator_unit,operational_status,condition_status,last_inspection_date,capacity_kpi,service_kpi,note,updated_at
+CEM-001,cemetery,Đơn vị quản lý A,ACTIVE,CHUA_CAP_NHAT,,,,MVP v0.2 chưa kết nối dữ liệu vận hành thời gian thực.,2026-08-14
+CEM-002,cemetery,UBND địa phương B,REVIEW,CHUA_CAP_NHAT,,,,MVP v0.2 chưa kết nối dữ liệu vận hành thời gian thực.,2026-08-14
+CEM-003,cemetery,Đơn vị quản lý C,ACTIVE,CHUA_CAP_NHAT,,,,MVP v0.2 chưa kết nối dữ liệu vận hành thời gian thực.,2026-08-14
+CEM-004,cemetery,UBND địa phương D,RESTRICTED,CHUA_CAP_NHAT,,,,MVP v0.2 chưa kết nối dữ liệu vận hành thời gian thực.,2026-08-14
+CEM-005,cemetery,Đơn vị quản lý E,ACTIVE,CHUA_CAP_NHAT,,,,MVP v0.2 chưa kết nối dữ liệu vận hành thời gian thực.,2026-08-14
+CEM-006,cemetery,UBND địa phương F,ACTIVE,CHUA_CAP_NHAT,,,,MVP v0.2 chưa kết nối dữ liệu vận hành thời gian thực.,2026-08-14
+CEM-007,cemetery,Đơn vị quản lý G,REVIEW,CHUA_CAP_NHAT,,,,MVP v0.2 chưa kết nối dữ liệu vận hành thời gian thực.,2026-08-14
+CEM-008,cemetery,UBND địa phương H,ACTIVE,CHUA_CAP_NHAT,,,,MVP v0.2 chưa kết nối dữ liệu vận hành thời gian thực.,2026-08-14
+DRN-001,drain,Đơn vị thoát nước A,ACTIVE,CHUA_CAP_NHAT,,,,MVP v0.2 chưa kết nối dữ liệu vận hành thời gian thực.,2026-08-14
+DRN-002,drain,Đơn vị thoát nước A,REVIEW,CHUA_CAP_NHAT,,,,MVP v0.2 chưa kết nối dữ liệu vận hành thời gian thực.,2026-08-14
+DRN-003,drain,Đơn vị thoát nước B,ACTIVE,CHUA_CAP_NHAT,,,,MVP v0.2 chưa kết nối dữ liệu vận hành thời gian thực.,2026-08-14
+DRN-004,drain,Đơn vị thoát nước B,ACTIVE,CHUA_CAP_NHAT,,,,MVP v0.2 chưa kết nối dữ liệu vận hành thời gian thực.,2026-08-14
+DRN-005,drain,Đơn vị thoát nước C,REVIEW,CHUA_CAP_NHAT,,,,MVP v0.2 chưa kết nối dữ liệu vận hành thời gian thực.,2026-08-14
+DRN-006,drain,Đơn vị thoát nước C,REVIEW,CHUA_CAP_NHAT,,,,MVP v0.2 chưa kết nối dữ liệu vận hành thời gian thực.,2026-08-14
+DRN-007,drain,Đơn vị thoát nước D,ACTIVE,CHUA_CAP_NHAT,,,,MVP v0.2 chưa kết nối dữ liệu vận hành thời gian thực.,2026-08-14
+DRN-008,drain,Đơn vị thoát nước E,ACTIVE,CHUA_CAP_NHAT,,,,MVP v0.2 chưa kết nối dữ liệu vận hành thời gian thực.,2026-08-14
+DRN-009,drain,Đơn vị thoát nước F,ACTIVE,CHUA_CAP_NHAT,,,,MVP v0.2 chưa kết nối dữ liệu vận hành thời gian thực.,2026-08-14
+DRN-010,drain,Đơn vị thoát nước G,REVIEW,CHUA_CAP_NHAT,,,,MVP v0.2 chưa kết nối dữ liệu vận hành thời gian thực.,2026-08-14
+DRA-BMT-001,road,Đơn vị quản lý mô phỏng,ACTIVE,CHUA_CAP_NHAT,,,,MVP v0.2 chưa kết nối dữ liệu vận hành thời gian thực.,2026-08-14
+DRA-BMT-002,road,Đơn vị quản lý mô phỏng,ACTIVE,CHUA_CAP_NHAT,,,,MVP v0.2 chưa kết nối dữ liệu vận hành thời gian thực.,2026-08-14
+DRA-BMT-003,road,Đơn vị quản lý mô phỏng,ACTIVE,CHUA_CAP_NHAT,,,,MVP v0.2 chưa kết nối dữ liệu vận hành thời gian thực.,2026-08-14
+DRA-BMT-004,road,Đơn vị quản lý mô phỏng,ACTIVE,CHUA_CAP_NHAT,,,,MVP v0.2 chưa kết nối dữ liệu vận hành thời gian thực.,2026-08-14
+DRA-BMT-005,road,Đơn vị quản lý mô phỏng,ACTIVE,CHUA_CAP_NHAT,,,,MVP v0.2 chưa kết nối dữ liệu vận hành thời gian thực.,2026-08-14
+DRA-BMT-006,road,Đơn vị quản lý mô phỏng,ACTIVE,CHUA_CAP_NHAT,,,,MVP v0.2 chưa kết nối dữ liệu vận hành thời gian thực.,2026-08-14
+DRA-BMT-007,road,Đơn vị quản lý mô phỏng,ACTIVE,CHUA_CAP_NHAT,,,,MVP v0.2 chưa kết nối dữ liệu vận hành thời gian thực.,2026-08-14
+DRA-BMT-008,road,Đơn vị quản lý mô phỏng,ACTIVE,CHUA_CAP_NHAT,,,,MVP v0.2 chưa kết nối dữ liệu vận hành thời gian thực.,2026-08-14
+DRA-BMT-009,road,Đơn vị quản lý mô phỏng,RESTRICTED,CHUA_CAP_NHAT,,,,MVP v0.2 chưa kết nối dữ liệu vận hành thời gian thực.,2026-08-14
+DRA-BMT-010,road,Đơn vị quản lý mô phỏng,INACTIVE,CHUA_CAP_NHAT,,,,MVP v0.2 chưa kết nối dữ liệu vận hành thời gian thực.,2026-08-14
+WTR-001,water,Đơn vị cấp nước A,ACTIVE,CHUA_CAP_NHAT,,,,MVP v0.2 chưa kết nối dữ liệu vận hành thời gian thực.,2026-08-14
+WTR-002,water,Đơn vị cấp nước B,ACTIVE,CHUA_CAP_NHAT,,,,MVP v0.2 chưa kết nối dữ liệu vận hành thời gian thực.,2026-08-14
+WTR-003,water,Đơn vị cấp nước C,ACTIVE,CHUA_CAP_NHAT,,,,MVP v0.2 chưa kết nối dữ liệu vận hành thời gian thực.,2026-08-14
+WTR-004,water,Đơn vị cấp nước D,REVIEW,CHUA_CAP_NHAT,,,,MVP v0.2 chưa kết nối dữ liệu vận hành thời gian thực.,2026-08-14
+WTR-005,water,Đơn vị cấp nước E,ACTIVE,CHUA_CAP_NHAT,,,,MVP v0.2 chưa kết nối dữ liệu vận hành thời gian thực.,2026-08-14
+WTR-006,water,Đơn vị cấp nước F,ACTIVE,CHUA_CAP_NHAT,,,,MVP v0.2 chưa kết nối dữ liệu vận hành thời gian thực.,2026-08-14
+WTR-007,water,Đơn vị cấp nước G,REVIEW,CHUA_CAP_NHAT,,,,MVP v0.2 chưa kết nối dữ liệu vận hành thời gian thực.,2026-08-14
+WTR-008,water,Đơn vị cấp nước H,ACTIVE,CHUA_CAP_NHAT,,,,MVP v0.2 chưa kết nối dữ liệu vận hành thời gian thực.,2026-08-14

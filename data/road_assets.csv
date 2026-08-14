@@ -1,0 +1,11 @@
+﻿id,asset_code,asset_name,road_name,latitude,longitude,area_zone,sidewalk_width_m,usable_area_m2,management_unit,status,allowed_purposes,notes
+1,DRA-BMT-001,Vị trí mẫu số 01,Tuyến đường mẫu Trung tâm 01,12.68195,108.04432,KV1,6.0,30.0,Đơn vị quản lý mô phỏng,ACTIVE,TRONG_GIU_XE|KINH_DOANH_DICH_VU|SU_KIEN,Dữ liệu mô phỏng
+2,DRA-BMT-002,Vị trí mẫu số 02,Tuyến đường mẫu Trung tâm 02,12.68321,108.04618,KV1,5.5,25.0,Đơn vị quản lý mô phỏng,ACTIVE,TRONG_GIU_XE|KINH_DOANH_DICH_VU,Dữ liệu mô phỏng
+3,DRA-BMT-003,Vị trí mẫu số 03,Tuyến đường mẫu Dân cư 01,12.67654,108.0487,KV2,4.5,18.0,Đơn vị quản lý mô phỏng,ACTIVE,KINH_DOANH_DICH_VU|SU_KIEN,Dữ liệu mô phỏng
+4,DRA-BMT-004,Vị trí mẫu số 04,Tuyến đường mẫu Dân cư 02,12.67486,108.04262,KV2,5.0,20.0,Đơn vị quản lý mô phỏng,ACTIVE,TRONG_GIU_XE|KINH_DOANH_DICH_VU,Dữ liệu mô phỏng
+5,DRA-BMT-005,Vị trí mẫu số 05,Tuyến đường mẫu Ngoại vi 01,12.66954,108.05126,KV3,4.0,15.0,Đơn vị quản lý mô phỏng,ACTIVE,TAP_KET_VAT_LIEU|SU_KIEN,Dữ liệu mô phỏng
+6,DRA-BMT-006,Vị trí mẫu số 06,Tuyến đường mẫu Ngoại vi 02,12.6873,108.0531,KV3,6.5,35.0,Đơn vị quản lý mô phỏng,ACTIVE,TRONG_GIU_XE|TAP_KET_VAT_LIEU,Dữ liệu mô phỏng
+7,DRA-BMT-007,Vị trí mẫu số 07,Tuyến đường mẫu Liên xã 01,12.69214,108.03892,KV4,4.5,20.0,Đơn vị quản lý mô phỏng,ACTIVE,TAP_KET_VAT_LIEU|SU_KIEN,Dữ liệu mô phỏng
+8,DRA-BMT-008,Vị trí mẫu số 08,Tuyến đường mẫu Liên xã 02,12.66548,108.03671,KV4,5.0,22.0,Đơn vị quản lý mô phỏng,ACTIVE,KINH_DOANH_DICH_VU|SU_KIEN,Dữ liệu mô phỏng
+9,DRA-BMT-009,Vị trí mẫu số 09,Tuyến đường mẫu Hạn chế 01,12.68021,108.05633,KV2,3.0,5.0,Đơn vị quản lý mô phỏng,RESTRICTED,SU_KIEN,Cần cán bộ xem xét
+10,DRA-BMT-010,Vị trí mẫu số 10,Tuyến đường mẫu Không tiếp nhận,12.67235,108.05844,KV3,3.5,0.0,Đơn vị quản lý mô phỏng,INACTIVE,,Không tiếp nhận hồ sơ

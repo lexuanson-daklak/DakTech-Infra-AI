@@ -1,0 +1,5 @@
+﻿source_id,module,source_file,description,status,received_at,usage_note
+SRC-MVP-ROAD-001,road,road_assets.csv,Dữ liệu mô phỏng kế thừa cấu trúc DakRoad AI,DEMO,2026-08-14,Không dùng để ra quyết định hành chính
+SRC-MVP-CEM-001,cemetery,cemetery_assets.csv,Dữ liệu nghĩa trang mô phỏng,DEMO,2026-08-14,Chưa phải danh mục nghĩa trang chính thức
+SRC-MVP-WTR-001,water,water_assets.csv,Dữ liệu công trình cấp nước mô phỏng,DEMO,2026-08-14,Chưa phải dữ liệu vận hành doanh nghiệp cấp nước
+SRC-MVP-DRN-001,drain,drain_assets.csv,Dữ liệu thoát nước/nước thải mô phỏng,DEMO,2026-08-14,Chưa phải CSDL tài sản chính thức
