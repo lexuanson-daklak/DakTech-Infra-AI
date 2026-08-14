@@ -14,17 +14,22 @@ pages = {
         st.Page("pages/home.py", title="Dashboard lãnh đạo", icon="🏠"),
         st.Page("pages/asset_360.py", title="Hồ sơ tài sản 360°", icon="🧭"),
     ],
-    "Phân hệ chuyên ngành": [
-        st.Page("pages/dakroad.py", title="DakRoad AI", icon="🛣️"),
-        st.Page("pages/dakcemetery.py", title="DakCemetery AI", icon="⚱️"),
+    "DakCemetery AI – Nghĩa trang": [
+        st.Page("pages/cemetery_dashboard.py", title="Dashboard nghĩa trang", icon="📊"),
+        st.Page("pages/cemetery_inventory.py", title="Danh mục nghĩa trang", icon="📋"),
+        st.Page("pages/cemetery_map.py", title="Bản đồ nghĩa trang", icon="🗺️"),
+        st.Page("pages/dakcemetery.py", title="Hồ sơ nghĩa trang 360° (mẫu)", icon="⚱️"),
         st.Page("pages/cemetery_sources.py", title="Kho báo cáo nghĩa trang", icon="🗂️"),
-        st.Page("pages/cemetery_import.py", title="Nạp báo cáo nghĩa trang", icon="📥"),
+        st.Page("pages/cemetery_import.py", title="Mô phỏng nạp báo cáo", icon="📥"),
+    ],
+    "Các phân hệ khác": [
+        st.Page("pages/dakroad.py", title="DakRoad AI", icon="🛣️"),
         st.Page("pages/dakwater.py", title="DakWater AI", icon="💧"),
         st.Page("pages/dakdrain.py", title="DakDrain AI", icon="🌧️"),
     ],
     "Quản trị dữ liệu": [
         st.Page("pages/data_import.py", title="Nhập & chuẩn hóa", icon="📥"),
-        st.Page("pages/data_quality.py", title="Rule Engine dữ liệu", icon="🧪"),
+        st.Page("pages/data_quality.py", title="Bộ kiểm tra quy tắc dữ liệu", icon="🧪"),
         st.Page("pages/legal_data.py", title="Kho dữ liệu & pháp lý", icon="⚖️"),
         st.Page("pages/implementation.py", title="Lộ trình triển khai", icon="🧭"),
     ],

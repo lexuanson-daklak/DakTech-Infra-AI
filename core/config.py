@@ -7,7 +7,8 @@ TEMPLATE_DIR = BASE_DIR / "templates"
 
 APP_NAME = "DakTech Infra AI"
 APP_TAGLINE = "AI quản trị hạ tầng kỹ thuật Đắk Lắk"
-VERSION = "MVP v0.4"
+VERSION = "MVP v0.5"
+DEPLOYMENT_MODE = "PUBLIC_DEMO"
 DISCLAIMER = (
     "BẢN MVP THỬ NGHIỆM – dữ liệu mẫu và dữ liệu dẫn xuất từ báo cáo chỉ phục vụ kiểm chứng mô hình; "
     "không thay thế hồ sơ, cơ sở dữ liệu, kết luận chuyên môn hoặc quyết định của cơ quan nhà nước."

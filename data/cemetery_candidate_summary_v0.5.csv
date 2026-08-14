@@ -1,0 +1,10 @@
+﻿chi_tieu,gia_tri,ghi_chu
+Bản ghi ứng viên chưa xác minh,303,Dữ liệu dẫn xuất từ báo cáo; chưa phải danh mục chính thức
+Khóa định danh ứng viên khác nhau,267,Khóa kỹ thuật tên + địa bàn; không đồng nghĩa số nghĩa trang chính thức
+Nhóm có khả năng trùng cần rà soát,20,"Chỉ là trùng khóa kỹ thuật, không tự động gộp"
+Bản ghi nằm trong nhóm có khả năng trùng,56,Cần đối chiếu nguồn trước khi gộp
+Bản ghi cần ít nhất một rà soát v0.5,127,Có ít nhất một cờ cấu trúc/chất lượng/khả năng trùng
+Bản ghi thiếu đơn vị quản lý,51,Cần bổ sung/xác minh
+Bản ghi thiếu diện tích,24,Nguồn chưa có hoặc chưa tách được
+Bản ghi có cờ AREA_VALUE_SUSPECT,21,Không tự sửa; chờ đối chiếu
+Bản ghi đã xác minh,0,Chỉ chuyển lớp chính thức sau xác minh

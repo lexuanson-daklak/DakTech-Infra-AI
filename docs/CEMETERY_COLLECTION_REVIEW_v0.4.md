@@ -1,4 +1,4 @@
-# Rà soát nguồn báo cáo nghĩa trang – MVP v0.4
+# Rà soát nguồn báo cáo nghĩa trang – lớp nguồn v0.4
 
 ## 1. Phạm vi tiếp nhận
 - 03 tệp RAR, gồm 36 gói hồ sơ.
@@ -7,16 +7,16 @@
 
 ## 2. Kết quả xử lý sơ bộ
 - 303 bản ghi chi tiết đã tách từ 32 nguồn.
-- 56 bản ghi có cờ chất lượng dữ liệu cần đối chiếu.
-- Cư Pui báo cáo 15 khu mai táng ở mức tổng hợp; chưa đủ dòng chi tiết để ghép tương đương 303 bản ghi nói trên.
+- 56 bản ghi có cờ chất lượng dữ liệu v0.4 cần đối chiếu.
+- Có 01 nguồn báo cáo một số khu mai táng ở mức tổng hợp, chưa đủ dòng chi tiết để ghép tương đương với lớp 303 bản ghi.
 
-## 3. Các nguồn không được nhập chung một cách máy móc
-- Phường Buôn Hồ: báo cáo có dấu hiệu **xin lấy lại/hủy văn bản** → loại khỏi lớp dữ liệu chính thức.
-- Xã Ea Ning: văn bản triển khai quy định, chưa phải kiểm kê hiện trạng trong gói hiện có.
-- Phường Đông Hòa: hồ sơ quy hoạch/mở rộng Nghĩa trang Đá Cốc.
-- Xã Ea Súp: quyết định đóng cửa nghĩa trang cũ và chuyển sang nghĩa trang mới.
-- Công ty CP Đô thị & Môi trường Đắk Lắk: báo cáo của đơn vị vận hành.
-- Ban Quản lý Khu kinh tế Phú Yên: hồ sơ bối cảnh đóng cửa/di dời liên quan dự án.
+## 3. Các nhóm nguồn không nhập chung máy móc
+- Có nguồn đã xin lấy lại/hủy văn bản → loại khỏi lớp dữ liệu chính thức.
+- Có nguồn chỉ là văn bản triển khai quy định, chưa phải kiểm kê hiện trạng.
+- Có nguồn chủ yếu là hồ sơ quy hoạch/mở rộng.
+- Có nguồn là quyết định đóng cửa/chuyển trạng thái.
+- Có nguồn từ đơn vị vận hành.
+- Có nguồn là bối cảnh dự án/di dời.
 
 ## 4. Nhóm vấn đề chất lượng dữ liệu
 - Thiếu/không rõ đơn vị quản lý ở một số bản ghi.

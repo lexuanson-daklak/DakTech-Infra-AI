@@ -2,19 +2,20 @@ import pandas as pd
 import streamlit as st
 
 from core.cemetery_service import cemetery_kpis, load_cemetery_master
+from core.config import VERSION
 from core.ui import kpi_row, point_map, show_key_value, status_table
 
-st.title("⚱️ DakCemetery AI")
+st.title("⚱️ Hồ sơ nghĩa trang 360° – dữ liệu mẫu")
 st.caption("Phân hệ quản trị nghĩa trang và cơ sở hỏa táng – tập trung vào tài sản, quỹ đất, công suất, quy hoạch, hạ tầng, đầu tư và nguồn dữ liệu.")
 
 st.info(
-    "MVP v0.4 chưa quản lý thông tin cá nhân người đã mất. Trọng tâm là dữ liệu quản lý nhà nước cấp cơ sở/cấp tỉnh. "
+    f"{VERSION} không quản lý thông tin cá nhân người đã mất trong bản Public. Trọng tâm là dữ liệu quản lý nhà nước về tài sản/hạ tầng. "
     "Các tín hiệu 'quỹ đất thấp' chỉ phục vụ rà soát, không phải kết luận pháp lý hoặc quyết định đóng/mở rộng nghĩa trang."
 )
 
 df = load_cemetery_master()
 
-st.caption("Lớp bản đồ/hồ sơ ở trang này hiện vẫn là dữ liệu mẫu để kiểm chứng giao diện. Dữ liệu dẫn xuất từ 36 gói báo cáo được quản lý riêng tại trang **Kho báo cáo nghĩa trang** và chưa tự động coi là dữ liệu chính thức.")
+st.caption("Trang này chỉ dùng 8 bản ghi mô phỏng để kiểm chứng Hồ sơ 360°. Dữ liệu báo cáo thực tế được quản lý ở lớp ứng viên và chỉ chuyển sang danh mục chính thức sau xác minh.")
 
 c1, c2, c3 = st.columns(3)
 with c1:

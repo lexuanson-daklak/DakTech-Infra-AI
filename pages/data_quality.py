@@ -4,8 +4,8 @@ import streamlit as st
 from core.data import load_asset_registry
 from core.rule_engine import evaluate_registry_rules, load_rule_catalog
 
-st.title("🧪 Rule Engine & chất lượng dữ liệu")
-st.caption("v0.2 chỉ kích hoạt các quy tắc an toàn về dữ liệu và tín hiệu quản trị; quy tắc pháp lý chuyên ngành đang khóa.")
+st.title("🧪 Bộ kiểm tra quy tắc & chất lượng dữ liệu")
+st.caption("Chỉ kích hoạt các quy tắc an toàn về dữ liệu và tín hiệu quản trị; quy tắc pháp lý chuyên ngành đang khóa.")
 
 registry = load_asset_registry()
 results = evaluate_registry_rules(registry)
@@ -20,7 +20,7 @@ c4.metric("Tín hiệu/lỗi", len(results))
 st.markdown("### Danh mục quy tắc")
 st.dataframe(catalog, use_container_width=True, hide_index=True)
 
-st.markdown("### Kết quả chạy Rule Engine")
+st.markdown("### Kết quả kiểm tra quy tắc")
 if results.empty:
     st.success("Không phát hiện lỗi/tín hiệu theo bộ quy tắc hiện hành.")
 else:

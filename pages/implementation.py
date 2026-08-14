@@ -2,25 +2,27 @@ import pandas as pd
 import streamlit as st
 
 st.title("🧭 Lộ trình triển khai DakTech Infra AI")
-st.caption("Mục tiêu: đi từ MVP chạy được → thí điểm nghiệp vụ → hệ thống chính thức; không nhập dữ liệu toàn tỉnh ngay từ đầu.")
+st.caption("Đi từ bản thử nghiệm chạy được → quản trị dữ liệu thực → thí điểm nội bộ → hệ thống chính thức.")
 
 plan = pd.DataFrame([
-    ["Đã làm", "MVP v0.1", "Khung nền tảng mẹ + 4 phân hệ", "Chứng minh kiến trúc đa phân hệ", "Nhóm phát triển"],
-    ["Đã làm", "MVP v0.2", "Asset Registry + hồ sơ 360° + import + Rule Engine dữ liệu", "Chuẩn hóa quản trị dữ liệu dùng chung", "Nhóm phát triển"],
-    ["Tiếp theo", "MVP v0.3", "Chuẩn hóa bộ dữ liệu chuyên ngành + workflow", "Thí điểm một số tài sản thật đã được phép sử dụng", "Phòng PTHT + đơn vị quản lý"],
-    ["Giai đoạn thí điểm", "Sau v0.3", "CSDL tập trung, phân quyền, audit, sao lưu", "Môi trường cơ quan/đơn vị đủ điều kiện", "Cơ quan có thẩm quyền + CNTT"],
-    ["Mở rộng", "Sau thí điểm", "Kết nối hệ thống khác, dashboard cấp tỉnh", "Vận hành chính thức theo đề án/quy chế", "Các cơ quan, đơn vị liên quan"],
-], columns=["Trạng thái", "Mốc", "Công việc", "Kết quả cần đạt", "Trách nhiệm chính"])
+    ["Đã làm", "MVP v0.1", "Khung nền tảng mẹ + 4 phân hệ", "Chứng minh kiến trúc đa phân hệ"],
+    ["Đã làm", "MVP v0.2", "Danh mục tài sản dùng chung + hồ sơ 360° + nhập dữ liệu", "Chuẩn hóa lõi quản trị"],
+    ["Đã làm", "MVP v0.3", "DakCemetery AI + biểu mẫu chuyên ngành", "Kiểm chứng cấu trúc nghĩa trang"],
+    ["Đã làm", "MVP v0.4", "Kho 36 gói báo cáo + lớp dữ liệu dẫn xuất", "Quản trị nguồn và chất lượng"],
+    ["Đang làm", "MVP v0.5", "Danh mục nghĩa trang ứng viên + rà soát trùng + dashboard nghĩa trang", "Chuẩn bị lớp dữ liệu chính thức"],
+    ["Tiếp theo", "MVP v0.6", "Xác minh một số nghĩa trang + tọa độ + hồ sơ 360° thực", "Thí điểm nội bộ phạm vi nhỏ"],
+    ["Sau thí điểm", "v1.0", "CSDL tập trung, phân quyền, nhật ký, sao lưu, quy chế vận hành", "Hệ thống đủ điều kiện vận hành theo quyết định/đề án"],
+], columns=["Trạng thái", "Mốc", "Công việc", "Kết quả cần đạt"])
 st.dataframe(plan, use_container_width=True, hide_index=True)
 
-st.markdown("### Việc làm ngay sau v0.2")
-st.markdown("""
-1. Giữ nguyên **DakRoad AI v0.6.3** như mốc sản phẩm khởi nguồn.
-2. Dùng **DakTech Infra AI** làm repository/nền tảng mẹ.
-3. Chốt biểu mẫu dữ liệu với Phòng PTHT trước khi yêu cầu xã/phường hoặc đơn vị cập nhật.
-4. Chọn một phạm vi nhỏ cho từng lĩnh vực để kiểm chứng: nghĩa trang, cấp nước, thoát nước.
-5. Nạp pháp lý chuyên ngành theo Legal Version Control; chưa bật Rule Engine pháp lý nếu chưa rà soát.
-6. Dữ liệu nội bộ/dữ liệu cá nhân không đưa lên GitHub công khai hoặc Streamlit Community Cloud khi chưa đáp ứng yêu cầu bảo mật.
-""")
+st.markdown("### Việc ưu tiên sau v0.5")
+st.markdown(
+    "1. Rà soát 20 nhóm có khả năng trùng khóa kỹ thuật; không tự động gộp.\n"
+    "2. Bổ sung đơn vị quản lý và diện tích còn thiếu.\n"
+    "3. Xử lý các số liệu diện tích có cờ bất thường.\n"
+    "4. Chọn một số nghĩa trang có hồ sơ rõ để xác minh thí điểm và cấp mã chính thức.\n"
+    "5. Chỉ khi có tọa độ đáng tin cậy mới đưa dữ liệu thật lên bản đồ.\n"
+    "6. Dữ liệu nội bộ không đưa lên GitHub Public/website demo công khai."
+)
 
-st.success("Nguyên tắc triển khai: Nhà nước xác định dữ liệu, tiêu chuẩn, quy trình và thẩm quyền; phần mềm hỗ trợ quản trị; đơn vị quản lý chịu trách nhiệm về dữ liệu do mình cung cấp.")
+st.success("Nhà nước quyết định dữ liệu nào là chính thức và ai chịu trách nhiệm cập nhật; phần mềm chỉ hỗ trợ chuẩn hóa, cảnh báo, truy vết và điều hành.")

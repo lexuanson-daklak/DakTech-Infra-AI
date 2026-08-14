@@ -122,7 +122,7 @@ def read_report_table(uploaded_file, sheet_name: str | None = None) -> pd.DataFr
     if name.endswith(".xlsx"):
         raw = uploaded_file.getvalue() if hasattr(uploaded_file, "getvalue") else uploaded_file.read()
         return pd.read_excel(BytesIO(raw), sheet_name=sheet_name or 0)
-    raise ValueError("MVP v0.3 hỗ trợ CSV hoặc XLSX.")
+    raise ValueError("Hỗ trợ CSV hoặc XLSX.")
 
 
 def list_excel_sheets(uploaded_file) -> list[str]:

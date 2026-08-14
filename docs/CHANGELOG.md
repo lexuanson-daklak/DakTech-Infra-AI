@@ -31,3 +31,14 @@
 - Bổ sung mã tài sản tạm, kiểm tra quỹ đất/diện tích, tín hiệu quản lý và trạng thái xác minh.
 - Bổ sung biểu mẫu Excel 7 sheet cho dữ liệu nghĩa trang.
 - Bổ sung tài liệu chuẩn dữ liệu và lộ trình v0.4.
+
+## MVP v0.5 – 2026-08-14
+- Tạo Dashboard quản lý nghĩa trang.
+- Tạo trang Danh mục nghĩa trang với 3 lớp: chính thức / ứng viên / dữ liệu mẫu.
+- Tạo trang Bản đồ nghĩa trang, không tự suy đoán tọa độ dữ liệu thật.
+- Tạo lớp tổng hợp ứng viên từ 303 bản ghi dẫn xuất nhưng không đưa chi tiết lên GitHub Public.
+- Phát hiện 20 nhóm có khả năng trùng theo khóa kỹ thuật tên + địa bàn; không tự động gộp.
+- Tách Local DataPack v0.5 để phục vụ rà soát nội bộ.
+- Khóa chức năng nạp dữ liệu nội bộ trên bản Public.
+- Việt hóa "Rule Engine" thành "Bộ kiểm tra quy tắc" trên giao diện chính.
+- Đưa phiên bản về biến cấu hình dùng chung `VERSION = MVP v0.5`.

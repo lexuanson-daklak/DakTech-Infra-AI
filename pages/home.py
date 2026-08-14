@@ -22,7 +22,7 @@ kpi_row([
     ("Tài sản mẫu", f"{len(registry):,}", "Tổng số tài sản trong Asset Registry dùng chung"),
     ("Cần chú ý", f"{len(attention):,}", "Tài sản có trạng thái khác ACTIVE"),
     ("Mức đầy đủ của dữ liệu mẫu", f"{completeness:.1f}%", "Tỷ lệ có dữ liệu ở các trường bắt buộc của bộ dữ liệu mẫu đang dùng để kiểm chứng"),
-    ("Lỗi dữ liệu", f"{int((quality.severity == 'ERROR').sum()) if not quality.empty else 0}", "Kết quả Rule Engine chất lượng dữ liệu"),
+    ("Lỗi dữ liệu", f"{int((quality.severity == 'ERROR').sum()) if not quality.empty else 0}", "Kết quả Bộ kiểm tra quy tắc chất lượng dữ liệu"),
 ])
 
 st.divider()
@@ -58,7 +58,7 @@ else:
 
 st.markdown("### Trạng thái phiên bản hiện tại")
 st.info(
-    "MVP v0.4 bắt đầu tiếp nhận dữ liệu báo cáo nghĩa trang thực tế theo nguyên tắc: giữ nguồn gốc, "
-    "tách dữ liệu công khai khỏi dữ liệu làm việc nội bộ, gắn cờ chất lượng và chỉ dùng cho điều hành sau khi cán bộ xác minh. "
+    f"{VERSION} tập trung hình thành Danh mục nghĩa trang theo ba lớp: hồ sơ nguồn → ứng viên chưa xác minh → danh mục chính thức. "
+    "Bản GitHub Public chỉ hiển thị dữ liệu tổng hợp an toàn; dữ liệu chi tiết từ báo cáo vẫn được giữ nội bộ. "
     "Các quy tắc pháp lý chuyên ngành chưa được tự động áp dụng."
 )
