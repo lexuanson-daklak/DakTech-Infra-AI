@@ -1,67 +1,67 @@
-import pandas as pd
 import streamlit as st
 
-from core.cemetery_inventory_service import (
-    load_candidate_status,
-    load_candidate_summary,
-    load_candidate_type,
-    metric_from_summary,
+from core.cemetery_v06_service import (
+    load_v06_priority,
+    load_v06_type_summary,
+    load_v06_status_summary,
+    load_v06_quality_summary,
+    metric,
 )
 from core.ui import kpi_row
 
 st.title("📊 Dashboard quản lý nghĩa trang")
-st.caption("Tổng hợp tiến độ hình thành danh mục nghĩa trang từ các báo cáo đã thu thập. Số liệu dưới đây là lớp ứng viên CHƯA XÁC MINH, không phải tổng số nghĩa trang chính thức của tỉnh.")
+st.caption(
+    "MVP v0.6 bắt đầu xử lý 303 bản ghi dẫn xuất từ báo cáo thực tế. "
+    "Các số dưới đây là dữ liệu làm việc CHƯA XÁC MINH, không phải tổng số nghĩa trang chính thức của tỉnh."
+)
 
 kpi_row([
-    ("Bản ghi ứng viên", f"{int(metric_from_summary('Bản ghi ứng viên chưa xác minh')):,}", "Bản ghi dẫn xuất từ báo cáo, chưa xác minh"),
-    ("Khóa ứng viên khác nhau", f"{int(metric_from_summary('Khóa định danh ứng viên khác nhau')):,}", "Khóa kỹ thuật tên + địa bàn; không đồng nghĩa số nghĩa trang chính thức"),
-    ("Nhóm cần rà soát trùng", f"{int(metric_from_summary('Nhóm có khả năng trùng cần rà soát')):,}", "Chỉ là tín hiệu trùng khóa kỹ thuật; không tự động gộp"),
-    ("Thiếu đơn vị quản lý", f"{int(metric_from_summary('Bản ghi thiếu đơn vị quản lý')):,}", "Cần bổ sung hoặc xác minh từ nguồn"),
-    ("Đã xác minh", f"{int(metric_from_summary('Bản ghi đã xác minh')):,}", "Chỉ bản ghi xác minh mới được chuyển sang lớp chính thức"),
+    ("Bản ghi ứng viên", f"{int(metric('Bản ghi ứng viên từ báo cáo')):,}", "Dòng dữ liệu tách từ báo cáo; chưa phải số nghĩa trang chính thức"),
+    ("Nhóm kỹ thuật tên + địa bàn", f"{int(metric('Nhóm kỹ thuật tên + địa bàn')):,}", "Nhóm rà soát; không tự động coi mỗi nhóm là một nghĩa trang"),
+    ("Nhóm cùng tên cần đối chiếu", f"{int(metric('Nhóm cùng tên + cùng địa bàn có nhiều dòng')):,}", "Có nhiều dòng cùng tên + cùng địa bàn; không tự động gộp"),
+    ("P1 – ưu tiên cao", f"{int(metric('Ưu tiên P1 - đối chiếu diện tích')):,}", "Có cờ diện tích cần đối chiếu với nguồn"),
+    ("P3 – đủ trường để đối chiếu", f"{int(metric('P3 - đủ trường để cán bộ đối chiếu')):,}", "Đủ trường cơ bản để cán bộ kiểm tra; vẫn chưa xác minh"),
 ])
 
 st.warning(
-    "MVP v0.5 tách rõ ba lớp: (1) hồ sơ nguồn, (2) danh mục ứng viên chưa xác minh, (3) danh mục quản lý chính thức. "
-    "Hiện lớp (3) chưa tự động nhận bất kỳ bản ghi nào từ báo cáo."
+    "v0.6 thực hiện chuẩn hóa kỹ thuật và xếp hàng đợi kiểm tra. "
+    "Hệ thống không tự sửa số liệu, không tự gộp các dòng cùng tên và không tự cấp mã nghĩa trang chính thức."
 )
 
 left, right = st.columns(2)
 with left:
-    st.markdown("### Trạng thái theo dữ liệu nguồn")
-    status = load_candidate_status()
-    if status.empty:
-        st.info("Chưa có dữ liệu tổng hợp trạng thái.")
+    st.markdown("### Mức ưu tiên rà soát")
+    pri = load_v06_priority()
+    if pri.empty:
+        st.info("Chưa có dữ liệu tổng hợp.")
     else:
-        view = status[["trang_thai_hien_thi", "so_ban_ghi"]].rename(columns={"trang_thai_hien_thi":"Trạng thái", "so_ban_ghi":"Số bản ghi"})
+        view = pri.rename(columns={"muc_uu_tien":"Mức ưu tiên","so_ban_ghi":"Số bản ghi","dien_giai":"Diễn giải"})
         st.dataframe(view, width="stretch", hide_index=True)
-        st.bar_chart(view.set_index("Trạng thái"))
+        st.bar_chart(view.set_index("Mức ưu tiên")["Số bản ghi"])
 
 with right:
-    st.markdown("### Phân loại sơ bộ theo chữ trong tên nguồn")
-    typ = load_candidate_type()
+    st.markdown("### Loại hình gợi ý từ đúng chữ trong tên nguồn")
+    typ = load_v06_type_summary()
     if typ.empty:
-        st.info("Chưa có dữ liệu phân loại.")
+        st.info("Chưa có dữ liệu tổng hợp.")
     else:
-        view = typ[["loai_hien_thi", "so_ban_ghi"]].rename(columns={"loai_hien_thi":"Tín hiệu loại hình", "so_ban_ghi":"Số bản ghi"})
+        view = typ.rename(columns={"loai_hinh_hien_thi_v06":"Loại hình gợi ý","do_tin_cay_loai_hinh_v06":"Độ tin cậy","so_ban_ghi":"Số bản ghi"})
         st.dataframe(view, width="stretch", hide_index=True)
-        st.bar_chart(view.set_index("Tín hiệu loại hình"))
+        st.bar_chart(view.groupby("Loại hình gợi ý")["Số bản ghi"].sum())
 
-st.markdown("### Hàng đợi làm sạch dữ liệu")
-summary = load_candidate_summary()
-if summary.empty:
-    st.info("Chưa có dữ liệu tổng hợp.")
-else:
-    focus = summary[summary["chi_tieu"].isin([
-        "Bản ghi nằm trong nhóm có khả năng trùng",
-        "Bản ghi thiếu đơn vị quản lý",
-        "Bản ghi thiếu diện tích",
-        "Bản ghi có cờ AREA_VALUE_SUSPECT",
-    ])].copy()
-    focus = focus.rename(columns={"chi_tieu":"Việc cần rà soát", "gia_tri":"Số bản ghi", "ghi_chu":"Nguyên tắc xử lý"})
-    st.dataframe(focus, width="stretch", hide_index=True)
+st.markdown("### Chất lượng trường dữ liệu")
+q = load_v06_quality_summary()
+if not q.empty:
+    st.dataframe(q.rename(columns={"chi_tieu":"Chỉ tiêu","so_ban_ghi":"Số bản ghi"}), width="stretch", hide_index=True)
 
-st.markdown("### Quy trình chuyển thành danh mục chính thức")
+st.markdown("### Trạng thái theo dữ liệu nguồn")
+s = load_v06_status_summary()
+if not s.empty:
+    st.dataframe(s[["trang_thai_hien_thi","so_ban_ghi"]].rename(columns={"trang_thai_hien_thi":"Trạng thái theo nguồn","so_ban_ghi":"Số bản ghi"}), width="stretch", hide_index=True)
+
+st.markdown("### Quy trình chuyển sang danh mục quản lý chính thức")
 st.markdown(
-    "**Báo cáo gốc → Bản ghi ứng viên → Phát hiện khả năng trùng → Đối chiếu nguồn → Xác định cùng/khác đối tượng → "
-    "Chuẩn hóa tên/địa bàn/loại hình → Cấp mã nghĩa trang chính thức → Xác minh → Đưa lên bản đồ và dashboard điều hành.**"
+    "**Báo cáo gốc → bản ghi ứng viên → chuẩn hóa tên/địa bàn → nhóm cùng tên + cùng địa bàn → "
+    "xếp P1/P2/P3 → cán bộ đối chiếu nguồn → kết luận cùng/khác đối tượng → xác minh loại hình, diện tích, đơn vị quản lý → "
+    "cấp mã chính thức → mới đưa lên bản đồ và dashboard chính thức.**"
 )

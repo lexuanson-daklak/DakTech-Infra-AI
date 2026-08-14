@@ -1,0 +1,5 @@
+﻿status,so_ban_ghi,trang_thai_hien_thi
+ACTIVE,232,Đang sử dụng/hoạt động theo dữ liệu nguồn
+REVIEW,53,Cần rà soát theo dữ liệu nguồn
+CLOSED,16,Đã đóng cửa/chuyển trạng thái theo nguồn
+PLANNED,2,Dự kiến/quy hoạch theo nguồn

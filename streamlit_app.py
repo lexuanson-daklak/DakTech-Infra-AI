@@ -17,6 +17,7 @@ pages = {
     "DakCemetery AI – Nghĩa trang": [
         st.Page("pages/cemetery_dashboard.py", title="Dashboard nghĩa trang", icon="📊"),
         st.Page("pages/cemetery_inventory.py", title="Danh mục nghĩa trang", icon="📋"),
+        st.Page("pages/cemetery_review_queue.py", title="Hàng đợi rà soát", icon="🧹"),
         st.Page("pages/cemetery_map.py", title="Bản đồ nghĩa trang", icon="🗺️"),
         st.Page("pages/dakcemetery.py", title="Hồ sơ nghĩa trang 360° (mẫu)", icon="⚱️"),
         st.Page("pages/cemetery_sources.py", title="Kho báo cáo nghĩa trang", icon="🗂️"),

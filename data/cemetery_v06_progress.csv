@@ -1,0 +1,14 @@
+﻿chi_tieu,gia_tri,ghi_chu
+Bản ghi ứng viên từ báo cáo,303,303 dòng dẫn xuất từ 32 nguồn; chưa phải số nghĩa trang chính thức.
+Nhóm kỹ thuật tên + địa bàn,267,Nhóm phục vụ rà soát; không tự động coi mỗi nhóm là một nghĩa trang.
+Nhóm cùng tên + cùng địa bàn có nhiều dòng,20,"Cần xác định là trùng, nhiều thửa/bộ phận hay nhiều đối tượng riêng."
+Bản ghi trong nhóm cùng tên + cùng địa bàn,56,Không tự động gộp.
+Ưu tiên P1 - đối chiếu diện tích,21,Có cờ diện tích cần đối chiếu từ lớp dữ liệu trước.
+Ưu tiên P2 - cần làm sạch,106,"Thiếu trường, chưa rõ loại hình hoặc cùng tên/cùng địa bàn nhiều dòng."
+P3 - đủ trường để cán bộ đối chiếu,176,Đủ trường dữ liệu cơ bản; vẫn chưa được xác minh.
+Thiếu diện tích,24,Chưa có area_ha trong dữ liệu dẫn xuất; một số dòng đồng thời có cờ cần đối chiếu.
+Diện tích cần đối chiếu,21,Kế thừa cờ chất lượng từ lớp dữ liệu trước; giữ nguyên số liệu nguồn và không tự sửa.
+Thiếu đơn vị quản lý,51,Cần bổ sung/xác minh từ nguồn.
+Chưa rõ loại hình,39,Tên nguồn chưa nêu rõ nghĩa trang/nghĩa địa/khu mai táng.
+Ký hiệu NT cần xác minh,10,Hệ thống không tự giải nghĩa viết tắt.
+Đã xác minh chính thức,0,Chỉ sau đối chiếu cán bộ mới chuyển sang lớp chính thức.

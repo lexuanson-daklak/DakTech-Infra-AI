@@ -1,46 +1,48 @@
 # DakTech Infra AI
 
 **AI quản trị hạ tầng kỹ thuật Đắk Lắk**  
-**Phiên bản: MVP v0.5**
+**Phiên bản: MVP v0.6**
 
-DakTech Infra AI là nền tảng mẹ phát triển từ tư duy và kiến trúc của **DakRoad AI**. MVP v0.5 tập trung sâu vào **DakCemetery AI – quản lý nghĩa trang**.
+DakTech Infra AI là nền tảng mẹ phát triển từ tư duy và kiến trúc của **DakRoad AI**. MVP v0.6 tập trung sâu vào **DakCemetery AI – xử lý dữ liệu nghĩa trang thực tế**.
 
-## Trọng tâm v0.5: từ báo cáo đến danh mục nghĩa trang có kiểm soát
+## Trọng tâm v0.6: từ 303 bản ghi dẫn xuất đến hàng đợi xác minh
 
-Dữ liệu đã thu thập gồm 03 tệp RAR với 36 gói hồ sơ. Lớp làm việc nội bộ đã tách sơ bộ 303 bản ghi từ 32 nguồn. Hệ thống **không coi 303 bản ghi là 303 nghĩa trang chính thức**.
+Dữ liệu làm việc nội bộ hiện có **303 bản ghi dẫn xuất từ 32 nguồn**. v0.6 không coi các dòng này là 303 nghĩa trang chính thức.
 
-v0.5 tổ chức ba lớp:
+Hệ thống tổ chức lại thành:
 
-1. **Hồ sơ nguồn** – giữ nguyên báo cáo, quyết định, hồ sơ quy hoạch/mở rộng và nguồn khác.
-2. **Danh mục ứng viên chưa xác minh** – dữ liệu tách từ báo cáo, có khóa kỹ thuật và cờ chất lượng.
-3. **Danh mục quản lý chính thức** – chỉ hình thành sau khi cán bộ đối chiếu nguồn, xác định đối tượng, cấp mã và xác minh.
+1. **Hồ sơ nguồn** – giữ nguyên báo cáo/quyết định/hồ sơ.
+2. **Danh mục ứng viên** – 303 dòng được chuẩn hóa kỹ thuật và gắn cờ.
+3. **Nhóm rà soát tên + địa bàn** – 267 nhóm kỹ thuật; 20 nhóm có nhiều dòng, tổng 56 dòng.
+4. **Hàng đợi P1/P2/P3** – để cán bộ xử lý theo mức ưu tiên.
+5. **Danh mục chính thức** – hiện bằng 0; chỉ hình thành sau xác minh của cán bộ.
 
-## Chức năng mới
+## Kết quả xử lý v0.6
 
-- **Dashboard nghĩa trang**: tiến độ hình thành danh mục, trạng thái nguồn, hàng đợi làm sạch.
-- **Danh mục nghĩa trang**: tách rõ dữ liệu chính thức / ứng viên / dữ liệu mẫu.
-- **Bản đồ nghĩa trang**: chỉ đưa dữ liệu thật lên khi có tọa độ và đã xác minh; hiện dùng bản đồ mẫu để kiểm chứng giao diện.
-- **Kho báo cáo nghĩa trang**: theo dõi 36 gói hồ sơ, 303 bản ghi dẫn xuất và tình trạng xác minh.
-- **Phát hiện khả năng trùng**: dùng khóa kỹ thuật tên + địa bàn, nhưng **không tự động gộp**.
-- **Bộ kiểm tra quy tắc dữ liệu**: dùng thuật ngữ tiếng Việt trên giao diện; quy tắc pháp lý chuyên ngành vẫn khóa.
+- 303 bản ghi ứng viên;
+- 267 nhóm kỹ thuật tên + địa bàn;
+- 20 nhóm cùng tên + cùng địa bàn có nhiều dòng, tổng 56 dòng;
+- 21 dòng P1 cần đối chiếu cờ diện tích;
+- 106 dòng P2 cần làm sạch/bổ sung;
+- 176 dòng P3 đủ trường cơ bản để cán bộ đối chiếu nguồn;
+- 24 dòng thiếu diện tích;
+- 51 dòng thiếu đơn vị quản lý;
+- 39 dòng chưa rõ loại hình;
+- 10 dòng dùng ký hiệu `NT` cần xác minh;
+- 0 dòng được hệ thống tự xác minh chính thức.
 
-## Bản vá giao diện v0.5.1
+## Nguyên tắc kiểm soát
 
-- Việt hóa bảng **Tài sản đang cần theo dõi**.
-- Chuẩn hóa nhãn trạng thái hiển thị cho người dùng.
-- Đưa bản đồ điều hành về góc nhìn mặc định tập trung vào phạm vi Đắk Lắk sau sắp xếp địa giới.
-- Thay tham số Streamlit `use_container_width` đã bị cảnh báo bằng `width="stretch"` trong phần mã đang vận hành.
-- Chưa thay đổi dữ liệu nghĩa trang, chưa xác minh thêm bản ghi nào và chưa đưa dữ liệu nội bộ lên GitHub Public.
+- Không tự sửa số liệu nguồn.
+- Không tự động gộp các dòng cùng tên.
+- Không suy diễn ký hiệu/loại hình ngoài nội dung nguồn.
+- Không biến điểm đầy đủ dữ liệu thành kết luận pháp lý.
+- Không đưa dữ liệu chi tiết nội bộ lên GitHub Public.
+- Chỉ dữ liệu đã được cán bộ xác minh mới chuyển sang danh mục chính thức, bản đồ và dashboard quản lý.
 
 ## Bản GitHub Public
 
-Gói này **không chứa**:
-- 03 tệp RAR báo cáo gốc;
-- danh sách chi tiết 303 bản ghi;
-- tên/địa bàn chi tiết của lớp dữ liệu dẫn xuất nội bộ;
-- chức năng nạp dữ liệu nội bộ thật lên website demo.
-
-Dữ liệu chi tiết được đóng gói riêng trong **DakCemetery Local DataPack v0.5** và không được đưa lên GitHub Public trước khi rà soát/cho phép.
+Kho Public chỉ chứa mã nguồn và **số liệu tổng hợp an toàn** để kiểm chứng giao diện. Tên/địa bàn chi tiết của 303 bản ghi, báo cáo gốc và bảng rà soát nội bộ được đóng gói riêng trong **DakCemetery Local DataPack v0.6**.
 
 ## Tác giả/nguồn phát triển
 
