@@ -18,14 +18,14 @@ c3.metric("Đang khóa", int((~catalog["enabled"]).sum()))
 c4.metric("Tín hiệu/lỗi", len(results))
 
 st.markdown("### Danh mục quy tắc")
-st.dataframe(catalog, use_container_width=True, hide_index=True)
+st.dataframe(catalog, width="stretch", hide_index=True)
 
 st.markdown("### Kết quả kiểm tra quy tắc")
 if results.empty:
     st.success("Không phát hiện lỗi/tín hiệu theo bộ quy tắc hiện hành.")
 else:
     severity = st.multiselect("Lọc mức độ", sorted(results["severity"].unique().tolist()), default=sorted(results["severity"].unique().tolist()))
-    st.dataframe(results[results["severity"].isin(severity)], use_container_width=True, hide_index=True)
+    st.dataframe(results[results["severity"].isin(severity)], width="stretch", hide_index=True)
 
 st.warning(
     "CEM-LEGAL-001, WTR-LEGAL-001 và DRN-LEGAL-001 chỉ là vị trí giữ chỗ trong kiến trúc và đang disabled. "

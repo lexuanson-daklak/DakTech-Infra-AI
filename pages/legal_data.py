@@ -22,10 +22,10 @@ c4.metric("Nguồn dữ liệu tài sản", len(data_sources))
 
 st.subheader("Nguồn pháp lý kế thừa từ DakRoad AI")
 show_cols = [c for c in ["source_id", "document_no", "date", "issuer", "document_type", "territory", "status", "summary"] if c in sources.columns]
-st.dataframe(sources[show_cols], use_container_width=True, hide_index=True)
+st.dataframe(sources[show_cols], width="stretch", hide_index=True)
 
 st.subheader("Các điểm cần rà soát")
-st.dataframe(flags, use_container_width=True, hide_index=True)
+st.dataframe(flags, width="stretch", hide_index=True)
 
 st.subheader("Tình trạng pháp lý theo phân hệ")
 rows = []
@@ -38,9 +38,9 @@ for code, m in MODULES.items():
         "legal_state": "Kế thừa kho DakRoad; vẫn phải xác định phạm vi áp dụng" if code == "road" else "Chưa nạp bộ pháp lý chuyên ngành",
         "legal_rule_engine": "Chưa tự động quyết định",
     })
-st.dataframe(pd.DataFrame(rows), use_container_width=True, hide_index=True)
+st.dataframe(pd.DataFrame(rows), width="stretch", hide_index=True)
 
 st.subheader("Nguồn dữ liệu tài sản")
-st.dataframe(data_sources, use_container_width=True, hide_index=True)
+st.dataframe(data_sources, width="stretch", hide_index=True)
 
 st.warning("Không tự động coi dự thảo, đề án địa phương hoặc tài liệu tham khảo là quy định có hiệu lực. Mỗi dữ liệu pháp lý phải có nguồn, trạng thái, thời gian và phạm vi áp dụng.")

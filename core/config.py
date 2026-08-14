@@ -7,8 +7,12 @@ TEMPLATE_DIR = BASE_DIR / "templates"
 
 APP_NAME = "DakTech Infra AI"
 APP_TAGLINE = "AI quản trị hạ tầng kỹ thuật Đắk Lắk"
-VERSION = "MVP v0.5"
+VERSION = "MVP v0.5.1"
 DEPLOYMENT_MODE = "PUBLIC_DEMO"
+
+# Góc nhìn mặc định cho bản đồ điều hành toàn tỉnh sau sắp xếp địa giới.
+# Chỉ dùng để định vị giao diện demo, không phải dữ liệu ranh giới hành chính chính thức.
+DAKLAK_MAP_CENTER = {"latitude": 12.75, "longitude": 108.55, "zoom": 7.6}
 DISCLAIMER = (
     "BẢN MVP THỬ NGHIỆM – dữ liệu mẫu và dữ liệu dẫn xuất từ báo cáo chỉ phục vụ kiểm chứng mô hình; "
     "không thay thế hồ sơ, cơ sở dữ liệu, kết luận chuyên môn hoặc quyết định của cơ quan nhà nước."

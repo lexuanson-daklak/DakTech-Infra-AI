@@ -13,7 +13,7 @@ plan = pd.DataFrame([
     ["Tiếp theo", "MVP v0.6", "Xác minh một số nghĩa trang + tọa độ + hồ sơ 360° thực", "Thí điểm nội bộ phạm vi nhỏ"],
     ["Sau thí điểm", "v1.0", "CSDL tập trung, phân quyền, nhật ký, sao lưu, quy chế vận hành", "Hệ thống đủ điều kiện vận hành theo quyết định/đề án"],
 ], columns=["Trạng thái", "Mốc", "Công việc", "Kết quả cần đạt"])
-st.dataframe(plan, use_container_width=True, hide_index=True)
+st.dataframe(plan, width="stretch", hide_index=True)
 
 st.markdown("### Việc ưu tiên sau v0.5")
 st.markdown(

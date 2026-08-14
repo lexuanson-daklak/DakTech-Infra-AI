@@ -33,7 +33,7 @@ with left:
         st.info("Chưa có dữ liệu tổng hợp trạng thái.")
     else:
         view = status[["trang_thai_hien_thi", "so_ban_ghi"]].rename(columns={"trang_thai_hien_thi":"Trạng thái", "so_ban_ghi":"Số bản ghi"})
-        st.dataframe(view, use_container_width=True, hide_index=True)
+        st.dataframe(view, width="stretch", hide_index=True)
         st.bar_chart(view.set_index("Trạng thái"))
 
 with right:
@@ -43,7 +43,7 @@ with right:
         st.info("Chưa có dữ liệu phân loại.")
     else:
         view = typ[["loai_hien_thi", "so_ban_ghi"]].rename(columns={"loai_hien_thi":"Tín hiệu loại hình", "so_ban_ghi":"Số bản ghi"})
-        st.dataframe(view, use_container_width=True, hide_index=True)
+        st.dataframe(view, width="stretch", hide_index=True)
         st.bar_chart(view.set_index("Tín hiệu loại hình"))
 
 st.markdown("### Hàng đợi làm sạch dữ liệu")
@@ -58,7 +58,7 @@ else:
         "Bản ghi có cờ AREA_VALUE_SUSPECT",
     ])].copy()
     focus = focus.rename(columns={"chi_tieu":"Việc cần rà soát", "gia_tri":"Số bản ghi", "ghi_chu":"Nguyên tắc xử lý"})
-    st.dataframe(focus, use_container_width=True, hide_index=True)
+    st.dataframe(focus, width="stretch", hide_index=True)
 
 st.markdown("### Quy trình chuyển thành danh mục chính thức")
 st.markdown(

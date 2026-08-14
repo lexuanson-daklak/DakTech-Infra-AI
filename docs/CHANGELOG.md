@@ -1,3 +1,12 @@
+# Changelog
+
+## MVP v0.5.1
+- Vá giao diện sau khi v0.5 triển khai thành công trên Streamlit.
+- Việt hóa bảng tài sản cần theo dõi và nhãn trạng thái.
+- Cố định góc nhìn bản đồ điều hành về Đắk Lắk.
+- Loại cảnh báo `use_container_width` trong mã đang vận hành bằng API `width="stretch"`.
+- Không thay đổi lớp dữ liệu nội bộ hoặc trạng thái xác minh nghĩa trang.
+
 # CHANGELOG
 
 ## MVP v0.4 – 14/08/2026

@@ -11,7 +11,13 @@ def kpi_row(items):
         col.metric(label, value, help=help_text)
 
 
-def point_map(df: pd.DataFrame, tooltip_fields: list[str] | None = None, zoom: float = 7.0):
+def point_map(
+    df: pd.DataFrame,
+    tooltip_fields: list[str] | None = None,
+    zoom: float = 7.0,
+    center_lat: float | None = None,
+    center_lon: float | None = None,
+):
     if df.empty or not {"latitude", "longitude"}.issubset(df.columns):
         st.info("Chưa có dữ liệu tọa độ để hiển thị bản đồ.")
         return
@@ -30,19 +36,19 @@ def point_map(df: pd.DataFrame, tooltip_fields: list[str] | None = None, zoom: f
         auto_highlight=True,
     )
     view = pdk.ViewState(
-        latitude=float(map_df["latitude"].mean()),
-        longitude=float(map_df["longitude"].mean()),
+        latitude=float(center_lat if center_lat is not None else map_df["latitude"].mean()),
+        longitude=float(center_lon if center_lon is not None else map_df["longitude"].mean()),
         zoom=zoom,
     )
     st.pydeck_chart(
         pdk.Deck(layers=[layer], initial_view_state=view, tooltip={"html": html}),
-        use_container_width=True,
+        width="stretch",
     )
 
 
 def status_table(df: pd.DataFrame, columns: list[str]):
     cols = [c for c in columns if c in df.columns]
-    st.dataframe(df[cols], use_container_width=True, hide_index=True)
+    st.dataframe(df[cols], width="stretch", hide_index=True)
 
 
 def show_key_value(record: pd.Series, fields: list[tuple[str, str]]):
@@ -52,4 +58,4 @@ def show_key_value(record: pd.Series, fields: list[tuple[str, str]]):
         if pd.isna(value):
             value = ""
         rows.append({"Nội dung": label, "Thông tin": value})
-    st.dataframe(pd.DataFrame(rows), use_container_width=True, hide_index=True)
+    st.dataframe(pd.DataFrame(rows), width="stretch", hide_index=True)

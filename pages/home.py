@@ -1,7 +1,7 @@
 import pandas as pd
 import streamlit as st
 
-from core.config import APP_NAME, APP_TAGLINE, MODULES, VERSION
+from core.config import APP_NAME, APP_TAGLINE, DAKLAK_MAP_CENTER, MODULES, VERSION
 from core.data import asset_summary, load_asset_registry
 from core.registry import registry_completeness
 from core.rule_engine import evaluate_registry_rules
@@ -29,7 +29,13 @@ st.divider()
 left, right = st.columns([3, 2])
 with left:
     st.markdown("### Bản đồ tài sản dùng chung")
-    point_map(registry, ["asset_code", "asset_name", "module_name", "locality", "status"], zoom=6.5)
+    point_map(
+        registry,
+        ["asset_code", "asset_name", "module_name", "locality", "status"],
+        zoom=DAKLAK_MAP_CENTER["zoom"],
+        center_lat=DAKLAK_MAP_CENTER["latitude"],
+        center_lon=DAKLAK_MAP_CENTER["longitude"],
+    )
 with right:
     st.markdown("### Tín hiệu điều hành theo phân hệ")
     view = summary.copy()
@@ -42,7 +48,7 @@ with right:
         "management_units": "Đơn vị quản lý",
         "localities": "Địa bàn",
     })
-    st.dataframe(display, use_container_width=True, hide_index=True)
+    st.dataframe(display, width="stretch", hide_index=True)
     chart = view.set_index("module_name")[["active", "attention"]].rename(columns={"active": "Đang hoạt động", "attention": "Cần chú ý"})
     st.bar_chart(chart)
 
@@ -50,11 +56,30 @@ st.markdown("### Tài sản đang cần theo dõi")
 if attention.empty:
     st.success("Không có tài sản nào mang trạng thái cần chú ý trong bộ dữ liệu hiện tại.")
 else:
-    st.dataframe(
-        attention[["asset_code", "module_name", "asset_name", "locality", "management_unit", "status", "investment_need", "updated_at"]],
-        use_container_width=True,
-        hide_index=True,
-    )
+    attention_view = attention[[
+        "asset_code", "module_name", "asset_name", "locality",
+        "management_unit", "status", "investment_need", "updated_at"
+    ]].copy()
+    attention_view["status"] = attention_view["status"].map({
+        "ACTIVE": "Đang hoạt động",
+        "REVIEW": "Cần rà soát",
+        "RESTRICTED": "Hạn chế",
+        "LIMITED": "Giới hạn",
+        "CLOSED": "Đã đóng",
+        "PLANNED": "Dự kiến",
+        "INACTIVE": "Không hoạt động",
+    }).fillna(attention_view["status"])
+    attention_view = attention_view.rename(columns={
+        "asset_code": "Mã tài sản",
+        "module_name": "Phân hệ",
+        "asset_name": "Tên tài sản",
+        "locality": "Địa bàn",
+        "management_unit": "Đơn vị quản lý",
+        "status": "Trạng thái",
+        "investment_need": "Nhu cầu đầu tư/kiến nghị",
+        "updated_at": "Ngày cập nhật",
+    })
+    st.dataframe(attention_view, width="stretch", hide_index=True)
 
 st.markdown("### Trạng thái phiên bản hiện tại")
 st.info(

@@ -36,7 +36,7 @@ st.markdown("### 1. Phạm vi hồ sơ đã thu thập")
 if overview.empty:
     st.info("Chưa có tệp tổng hợp nguồn.")
 else:
-    st.dataframe(overview.rename(columns={"chi_tieu":"Chỉ tiêu", "gia_tri":"Giá trị", "ghi_chu":"Ghi chú"}), use_container_width=True, hide_index=True)
+    st.dataframe(overview.rename(columns={"chi_tieu":"Chỉ tiêu", "gia_tri":"Giá trị", "ghi_chu":"Ghi chú"}), width="stretch", hide_index=True)
 
 st.markdown("### 2. Tình trạng xử lý theo nguồn báo cáo")
 if status.empty:
@@ -50,7 +50,7 @@ else:
         "verification_status":"Trạng thái xác minh",
     }
     cols=[c for c in labels if c in status.columns]
-    st.dataframe(status[cols].rename(columns=labels), use_container_width=True, hide_index=True)
+    st.dataframe(status[cols].rename(columns=labels), width="stretch", hide_index=True)
 
 st.markdown("### 3. Những nhóm nguồn phải xử lý riêng")
 st.markdown(

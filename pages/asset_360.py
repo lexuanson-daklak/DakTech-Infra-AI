@@ -47,20 +47,20 @@ with tabs[0]:
 
 with tabs[1]:
     df = load_asset_layer("legal", selected)
-    st.dataframe(df, use_container_width=True, hide_index=True)
+    st.dataframe(df, width="stretch", hide_index=True)
     st.warning("Khung 360° không tự suy diễn căn cứ pháp lý. Quy định chuyên ngành chỉ được kích hoạt sau khi có nguồn, hiệu lực, phạm vi áp dụng và rà soát nghiệp vụ.")
 
 with tabs[2]:
     df = load_asset_layer("planning", selected)
-    st.dataframe(df, use_container_width=True, hide_index=True)
+    st.dataframe(df, width="stretch", hide_index=True)
 
 with tabs[3]:
     df = load_asset_layer("investment", selected)
-    st.dataframe(df, use_container_width=True, hide_index=True)
+    st.dataframe(df, width="stretch", hide_index=True)
 
 with tabs[4]:
     df = load_asset_layer("operations", selected)
-    st.dataframe(df, use_container_width=True, hide_index=True)
+    st.dataframe(df, width="stretch", hide_index=True)
 
 with tabs[5]:
     m = load_asset_layer("maintenance", selected)
@@ -69,14 +69,14 @@ with tabs[5]:
     if m.empty:
         st.info("Chưa có bản ghi bảo trì cho tài sản này.")
     else:
-        st.dataframe(m, use_container_width=True, hide_index=True)
+        st.dataframe(m, width="stretch", hide_index=True)
     st.markdown("#### Sự cố")
     if i.empty:
         st.info("Chưa có sự cố trong bộ dữ liệu MVP.")
     else:
-        st.dataframe(i, use_container_width=True, hide_index=True)
+        st.dataframe(i, width="stretch", hide_index=True)
 
 with tabs[6]:
     h = load_asset_layer("history", selected)
-    st.dataframe(h, use_container_width=True, hide_index=True)
+    st.dataframe(h, width="stretch", hide_index=True)
     st.caption("MVP v0.2 bắt đầu lưu dấu vết thay đổi bằng record_hash. Giai đoạn thí điểm cần chuyển thành audit log trong CSDL tập trung.")

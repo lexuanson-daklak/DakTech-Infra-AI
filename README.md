@@ -24,6 +24,14 @@ v0.5 tổ chức ba lớp:
 - **Phát hiện khả năng trùng**: dùng khóa kỹ thuật tên + địa bàn, nhưng **không tự động gộp**.
 - **Bộ kiểm tra quy tắc dữ liệu**: dùng thuật ngữ tiếng Việt trên giao diện; quy tắc pháp lý chuyên ngành vẫn khóa.
 
+## Bản vá giao diện v0.5.1
+
+- Việt hóa bảng **Tài sản đang cần theo dõi**.
+- Chuẩn hóa nhãn trạng thái hiển thị cho người dùng.
+- Đưa bản đồ điều hành về góc nhìn mặc định tập trung vào phạm vi Đắk Lắk sau sắp xếp địa giới.
+- Thay tham số Streamlit `use_container_width` đã bị cảnh báo bằng `width="stretch"` trong phần mã đang vận hành.
+- Chưa thay đổi dữ liệu nghĩa trang, chưa xác minh thêm bản ghi nào và chưa đưa dữ liệu nội bộ lên GitHub Public.
+
 ## Bản GitHub Public
 
 Gói này **không chứa**:

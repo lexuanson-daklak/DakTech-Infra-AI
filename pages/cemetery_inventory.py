@@ -29,7 +29,7 @@ with tab2:
     st.metric("Khóa kỹ thuật tên + địa bàn khác nhau", int(metric_from_summary("Khóa định danh ứng viên khác nhau")))
     st.caption("Khóa kỹ thuật chỉ hỗ trợ rà soát; không được dùng để tự động kết luận số nghĩa trang thực tế.")
     if not summary.empty:
-        st.dataframe(summary.rename(columns={"chi_tieu":"Chỉ tiêu", "gia_tri":"Giá trị", "ghi_chu":"Ghi chú"}), use_container_width=True, hide_index=True)
+        st.dataframe(summary.rename(columns={"chi_tieu":"Chỉ tiêu", "gia_tri":"Giá trị", "ghi_chu":"Ghi chú"}), width="stretch", hide_index=True)
 
 with tab3:
     demo = load_cemetery_master()

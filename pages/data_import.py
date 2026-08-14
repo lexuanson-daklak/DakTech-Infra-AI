@@ -37,14 +37,14 @@ if uploaded is not None:
         c3.metric("Lỗi phát hiện", summary["errors"])
 
         st.markdown("#### Dữ liệu sau chuẩn hóa")
-        st.dataframe(normalized, use_container_width=True, hide_index=True)
+        st.dataframe(normalized, width="stretch", hide_index=True)
 
         st.markdown("#### Kết quả kiểm tra")
         if errors.empty:
             st.success("Không phát hiện lỗi cấu trúc theo bộ kiểm tra của MVP v0.2.")
         else:
             st.error("Tệp còn lỗi. Cần xử lý trước khi đưa vào kho dữ liệu chính thức.")
-            st.dataframe(errors, use_container_width=True, hide_index=True)
+            st.dataframe(errors, width="stretch", hide_index=True)
 
         left, right = st.columns(2)
         with left:
