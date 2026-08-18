@@ -1,0 +1,14 @@
+DAKWATER AI – GÓI RIÊNG v0.7.1
+
+Upload toàn bộ nội dung trong UPLOAD_TO_REPO_ROOT vào gốc repository DakTech-Infra-AI.
+
+Gói gồm:
+- Dashboard cấp nước
+- Danh mục cấp nước
+- Bản đồ cấp nước mẫu
+- Mô hình dữ liệu cấp nước
+- Trung tâm xuất dữ liệu
+- Lõi xuất dữ liệu dùng chung
+- README + lộ trình
+
+Sau khi upload cả DakWater AI và DakDrain AI, upload gói DATA-EXPORT-STANDARD-v1.0 cuối cùng để kích hoạt menu chính thức.
