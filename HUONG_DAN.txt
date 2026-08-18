@@ -1,9 +1,0 @@
-QUY CHUẨN CHUNG – DATA-EXPORT-STANDARD-v1.0
-
-Thứ tự an toàn:
-1. Upload gói dakwater-ai riêng.
-2. Upload gói dakdrain-ai riêng.
-3. Upload gói QUY CHUẨN CHUNG này cuối cùng.
-
-Commit gợi ý:
-Áp dụng quy chuẩn Trung tâm xuất dữ liệu v1.0 toàn hệ sinh thái
