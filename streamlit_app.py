@@ -2,40 +2,51 @@ import streamlit as st
 
 from core.config import APP_NAME, APP_TAGLINE, DISCLAIMER, VERSION
 
-st.set_page_config(page_title=APP_NAME, page_icon="🏗️", layout="wide")
+st.set_page_config(
+    page_title=APP_NAME,
+    page_icon="🏗️",
+    layout="wide",
+    initial_sidebar_state="expanded",
+)
 
 st.sidebar.title("🏗️ DakTech Infra AI")
 st.sidebar.caption(APP_TAGLINE)
-st.sidebar.info(VERSION)
+st.sidebar.info(f"Phiên bản: {VERSION}")
 st.sidebar.warning(DISCLAIMER)
 
 pages = {
-    "Điều hành": [
-        st.Page("pages/home.py", title="Dashboard lãnh đạo", icon="🏠"),
+    "Điều hành chung": [
+        st.Page("pages/home.py", title="Bảng điều hành lãnh đạo", icon="🏠"),
         st.Page("pages/system_views.py", title="Cấu trúc hệ thống", icon="🧩"),
         st.Page("pages/asset_360.py", title="Hồ sơ tài sản 360°", icon="🧭"),
     ],
-    "DakCemetery AI – Quản lý nghĩa trang": [
-        st.Page("pages/cemetery_dashboard.py", title="Dashboard nghĩa trang", icon="📊"),
-        st.Page("pages/cemetery_inventory.py", title="Danh mục nghĩa trang", icon="📋"),
-        st.Page("pages/cemetery_review_queue.py", title="Hàng đợi rà soát", icon="🧹"),
-        st.Page("pages/cemetery_map.py", title="Bản đồ nghĩa trang", icon="🗺️"),
-        st.Page("pages/dakcemetery.py", title="Hồ sơ nghĩa trang 360° (mẫu)", icon="⚱️"),
-        st.Page("pages/cemetery_sources.py", title="Kho báo cáo nghĩa trang", icon="🗂️"),
-        st.Page("pages/cemetery_import.py", title="Mô phỏng nạp báo cáo", icon="📥"),
+    "Cấp nước sạch – DakWater AI": [
+        st.Page("pages/water_dashboard.py", title="Bảng điều hành cấp nước", icon="📊"),
+        st.Page("pages/water_inventory.py", title="Danh mục công trình cấp nước", icon="📋"),
+        st.Page("pages/dakwater.py", title="Bản đồ cấp nước", icon="🗺️"),
+        st.Page("pages/water_data_model.py", title="Mô hình dữ liệu cấp nước", icon="🧱"),
+        st.Page("pages/water_export_center.py", title="Trung tâm xuất dữ liệu", icon="📤"),
     ],
-    "Các phân hệ khác": [
-        st.Page("pages/dakroad.py", title="DakRoad AI – Đường bộ", icon="🛣️"),
-        st.Page("pages/dakwater.py", title="DakWater AI – Cấp nước", icon="💧"),
-        st.Page("pages/dakdrain.py", title="DakDrain AI – Thoát nước", icon="🌧️"),
+    "Thoát nước & nước thải – DakDrain AI": [
+        st.Page("pages/drain_dashboard.py", title="Bảng điều hành thoát nước", icon="📊"),
+        st.Page("pages/drain_inventory.py", title="Danh mục công trình thoát nước", icon="📋"),
+        st.Page("pages/dakdrain.py", title="Bản đồ thoát nước", icon="🗺️"),
+        st.Page("pages/drain_data_model.py", title="Mô hình dữ liệu thoát nước", icon="🧱"),
+        st.Page("pages/drain_export_center.py", title="Trung tâm xuất dữ liệu", icon="📤"),
     ],
-    "Quản trị dữ liệu": [
-        st.Page("pages/data_import.py", title="Nhập & chuẩn hóa", icon="📥"),
-        st.Page("pages/data_quality.py", title="Bộ kiểm tra quy tắc dữ liệu", icon="🧪"),
-        st.Page("pages/legal_data.py", title="Kho dữ liệu & pháp lý", icon="⚖️"),
+    "Đường bộ – DakRoad AI": [
+        st.Page("pages/dakroad.py", title="Quản lý kết cấu hạ tầng đường bộ", icon="🛣️"),
+    ],
+    "Dữ liệu và cơ sở pháp lý": [
+        st.Page("pages/data_import.py", title="Nhập và chuẩn hóa dữ liệu", icon="📥"),
+        st.Page("pages/data_quality.py", title="Kiểm tra chất lượng dữ liệu", icon="🧪"),
+        st.Page("pages/legal_data.py", title="Kho dữ liệu và cơ sở pháp lý", icon="⚖️"),
         st.Page("pages/implementation.py", title="Lộ trình triển khai", icon="🧭"),
+    ],
+    "Phân hệ tạm dừng": [
+        st.Page("pages/paused_modules.py", title="Nghĩa trang – DakCemetery AI", icon="⏸️"),
     ],
 }
 
-pg = st.navigation(pages)
+pg = st.navigation(pages, position="sidebar")
 pg.run()

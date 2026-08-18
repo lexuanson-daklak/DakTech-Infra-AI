@@ -1,0 +1,20 @@
+BẢN SỬA GỐC v0.7.2 – VIETNAMESE FIRST
+
+LỖI CŨ:
+Các file v0.7.1 đã bị đưa vào thư mục UPLOAD_TO_REPO_ROOT/ trong GitHub, nên Streamlit vẫn đọc file cũ ở thư mục gốc.
+
+CÁCH UPLOAD BẢN NÀY:
+1. Giải nén ZIP.
+2. Mở thư mục vừa giải nén.
+3. Chọn CÁC MỤC BÊN TRONG: streamlit_app.py, README.md, core/, pages/, docs/, modules/.
+4. Kéo các mục đó vào GitHub ở THƯ MỤC GỐC.
+5. KHÔNG kéo cả thư mục cha của chúng vào.
+6. Commit:
+   Sửa giao diện tiếng Việt và cấu trúc Streamlit v0.7.2
+7. Sau khi Streamlit chạy đúng, xóa thư mục UPLOAD_TO_REPO_ROOT/ và HUONG_DAN.txt đang thừa ở gốc GitHub.
+
+Nếu sau cập nhật vẫn hiện danh sách tên file kỹ thuật ở thanh bên:
+- vào Streamlit Manage app;
+- kiểm tra Main file path phải là streamlit_app.py;
+- Reboot app;
+- Ctrl+F5.

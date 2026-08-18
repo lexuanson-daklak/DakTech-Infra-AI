@@ -1,7 +1,12 @@
 # DakWater AI (Quản lý cấp nước sạch)
 
-Phân hệ quản lý cấp nước sạch thuộc **DakTech Infra AI**.
+Giao diện người dùng ưu tiên tiếng Việt.
 
-Định hướng: nguồn nước, nhà máy/trạm cấp nước, tuyến ống, vùng phục vụ, công suất, đơn vị vận hành, sự cố, bảo trì, đầu tư và hồ sơ pháp lý.
+Chức năng:
+- Bảng điều hành cấp nước.
+- Danh mục công trình cấp nước.
+- Bản đồ cấp nước.
+- Mô hình dữ liệu cấp nước.
+- Trung tâm xuất dữ liệu.
 
-Mã giao diện khung hiện có tại `pages/dakwater.py`.
+Người dùng nghiệp vụ tải dữ liệu trực tiếp từ Streamlit, không cần vào GitHub.

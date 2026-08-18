@@ -1,7 +1,12 @@
 # DakDrain AI (Quản lý thoát nước và xử lý nước thải)
 
-Phân hệ quản lý thoát nước và xử lý nước thải thuộc **DakTech Infra AI**.
+Giao diện người dùng ưu tiên tiếng Việt.
 
-Định hướng: tuyến cống, hố ga, cửa xả, trạm bơm, lưu vực, điểm ngập, công trình xử lý nước thải, vận hành, bảo trì và đầu tư.
+Chức năng:
+- Bảng điều hành thoát nước.
+- Danh mục công trình thoát nước.
+- Bản đồ thoát nước.
+- Mô hình dữ liệu thoát nước.
+- Trung tâm xuất dữ liệu.
 
-Mã giao diện khung hiện có tại `pages/dakdrain.py`.
+Người dùng nghiệp vụ tải dữ liệu trực tiếp từ Streamlit, không cần vào GitHub.
