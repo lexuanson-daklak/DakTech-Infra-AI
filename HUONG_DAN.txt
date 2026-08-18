@@ -1,14 +1,9 @@
-DAKDRAIN AI – GÓI RIÊNG v0.7.1
+QUY CHUẨN CHUNG – DATA-EXPORT-STANDARD-v1.0
 
-Upload toàn bộ nội dung trong UPLOAD_TO_REPO_ROOT vào gốc repository DakTech-Infra-AI.
+Thứ tự an toàn:
+1. Upload gói dakwater-ai riêng.
+2. Upload gói dakdrain-ai riêng.
+3. Upload gói QUY CHUẨN CHUNG này cuối cùng.
 
-Gói gồm:
-- Dashboard thoát nước
-- Danh mục thoát nước
-- Bản đồ thoát nước mẫu
-- Mô hình dữ liệu thoát nước
-- Trung tâm xuất dữ liệu
-- Lõi xuất dữ liệu dùng chung
-- README + lộ trình
-
-Sau khi upload cả DakWater AI và DakDrain AI, upload gói DATA-EXPORT-STANDARD-v1.0 cuối cùng để kích hoạt menu chính thức.
+Commit gợi ý:
+Áp dụng quy chuẩn Trung tâm xuất dữ liệu v1.0 toàn hệ sinh thái
