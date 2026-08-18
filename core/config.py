@@ -7,7 +7,7 @@ TEMPLATE_DIR = BASE_DIR / "templates"
 
 APP_NAME = "DakTech Infra AI"
 APP_TAGLINE = "AI quản trị hạ tầng kỹ thuật Đắk Lắk"
-VERSION = "MVP v0.6"
+VERSION = "MVP v0.6.1"
 DEPLOYMENT_MODE = "PUBLIC_DEMO"
 
 # Góc nhìn mặc định cho bản đồ điều hành toàn tỉnh sau sắp xếp địa giới.

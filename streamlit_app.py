@@ -12,9 +12,10 @@ st.sidebar.warning(DISCLAIMER)
 pages = {
     "Điều hành": [
         st.Page("pages/home.py", title="Dashboard lãnh đạo", icon="🏠"),
+        st.Page("pages/system_views.py", title="Cấu trúc hệ thống", icon="🧩"),
         st.Page("pages/asset_360.py", title="Hồ sơ tài sản 360°", icon="🧭"),
     ],
-    "DakCemetery AI – Nghĩa trang": [
+    "DakCemetery AI – Quản lý nghĩa trang": [
         st.Page("pages/cemetery_dashboard.py", title="Dashboard nghĩa trang", icon="📊"),
         st.Page("pages/cemetery_inventory.py", title="Danh mục nghĩa trang", icon="📋"),
         st.Page("pages/cemetery_review_queue.py", title="Hàng đợi rà soát", icon="🧹"),
@@ -24,9 +25,9 @@ pages = {
         st.Page("pages/cemetery_import.py", title="Mô phỏng nạp báo cáo", icon="📥"),
     ],
     "Các phân hệ khác": [
-        st.Page("pages/dakroad.py", title="DakRoad AI", icon="🛣️"),
-        st.Page("pages/dakwater.py", title="DakWater AI", icon="💧"),
-        st.Page("pages/dakdrain.py", title="DakDrain AI", icon="🌧️"),
+        st.Page("pages/dakroad.py", title="DakRoad AI – Đường bộ", icon="🛣️"),
+        st.Page("pages/dakwater.py", title="DakWater AI – Cấp nước", icon="💧"),
+        st.Page("pages/dakdrain.py", title="DakDrain AI – Thoát nước", icon="🌧️"),
     ],
     "Quản trị dữ liệu": [
         st.Page("pages/data_import.py", title="Nhập & chuẩn hóa", icon="📥"),
