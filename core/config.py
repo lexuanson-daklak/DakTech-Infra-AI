@@ -7,7 +7,7 @@ TEMPLATE_DIR = BASE_DIR / "templates"
 
 APP_NAME = "DakTech Infra AI"
 APP_TAGLINE = "AI quản trị hạ tầng kỹ thuật Đắk Lắk"
-VERSION = "MVP v0.7.2"
+VERSION = "MVP v0.7.3"
 DEPLOYMENT_MODE = "PUBLIC_DEMO"
 
 DAKLAK_MAP_CENTER = {"latitude": 12.75, "longitude": 108.55, "zoom": 7.6}

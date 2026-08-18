@@ -1,0 +1,24 @@
+DAKTECH INFRA AI – MVP v0.7.3
+
+1. Giải nén ZIP.
+2. Chọn trực tiếp các mục:
+   .streamlit/
+   core/
+   docs/
+   streamlit_app.py
+   README_v0.7.3.md
+   00_HUONG_DAN_UPLOAD_v0.7.3.txt
+3. Kéo các mục trên vào THƯ MỤC GỐC GitHub.
+4. Không tạo thư mục UPLOAD_TO_REPO_ROOT.
+5. Commit:
+   Cập nhật DakTech Infra AI v0.7.3 - dọn triệt để menu Streamlit
+6. Sau Commit:
+   Manage app -> Reboot app -> Ctrl + F5.
+7. Kết quả đúng:
+   - không còn tên file kỹ thuật ở menu;
+   - menu tiếng Việt;
+   - Cấp nước sạch và Thoát nước/nước thải là hai nhóm chính;
+   - mỗi nhóm có Trung tâm xuất dữ liệu;
+   - Nghĩa trang nằm trong Phân hệ tạm dừng.
+
+Sau khi chạy đúng, có thể xóa file hướng dẫn này khỏi GitHub.
